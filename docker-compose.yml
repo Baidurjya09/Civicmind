@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  # API Server
+  api:
+    build: .
+    image: civicmind:latest
+    container_name: civicmind-api
+    command: uvicorn apis.mock_apis:app --host 0.0.0.0 --port 8080
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./logs:/app/logs
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+
+  # Dashboard
+  dashboard:
+    build: .
+    image: civicmind:latest
+    container_name: civicmind-dashboard
+    command: streamlit run demo/dashboard.py --server.port 8501 --server.address 0.0.0.0
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./evaluation:/app/evaluation
+      - ./logs:/app/logs
+    environment:
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      - api
+    restart: unless-stopped
+
+  # Training (run manually with: docker-compose run trainer)
+  trainer:
+    build: .
+    image: civicmind:latest
+    container_name: civicmind-trainer
+    command: python training/train_grpo.py --mode train --epochs 2 --max_weeks 12
+    volumes:
+      - ./training:/app/training
+      - ./logs:/app/logs
+    environment:
+      - PYTHONUNBUFFERED=1
+      - CUDA_VISIBLE_DEVICES=0
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    profiles:
+      - training  # Only start with: docker-compose --profile training up trainer

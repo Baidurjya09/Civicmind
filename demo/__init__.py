@@ -1,0 +1,1 @@
+"""CivicMind Demo Package"""

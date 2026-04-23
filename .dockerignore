@@ -1,0 +1,45 @@
+# Don't copy these to Docker image
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+ENV/
+env/
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs & outputs
+logs/
+*.log
+training/checkpoints/*
+!training/checkpoints/.gitkeep
+evaluation/*.png
+evaluation/*.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Colab
+CivicMind_Colab.py

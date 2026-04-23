@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CivicMind — AI Governance Control Room</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600;700&display=swap');
+:root{--bg:#080c10;--bg2:#0d1318;--bg3:#111820;--border:#1e2d3d;--border2:#2a3f55;--green:#00ff87;--green-dim:#00994f;--yellow:#ffd43b;--red:#ff3b3b;--orange:#ff6b1a;--blue:#4dabf7;--blue-dim:#1c6ea4;--teal:#20c997;--text:#c8d8e8;--text-dim:#5a7a94;--text-bright:#e8f4ff;--mono:'Share Tech Mono',monospace;--sans:'Rajdhani',sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:var(--mono);font-size:12px;height:100vh;overflow:hidden;display:flex;flex-direction:column}
+body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,.08) 2px,rgba(0,0,0,.08) 4px);pointer-events:none;z-index:9999}
+#header{background:var(--bg2);border-bottom:1px solid var(--border);padding:8px 16px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+.logo{font-family:var(--sans);font-size:18px;font-weight:700;color:var(--text-bright);letter-spacing:2px;text-transform:uppercase}
+.logo span{color:var(--green)}
+.status-bar{display:flex;gap:20px;align-items:center}
+.hdr-pill{font-size:10px;padding:3px 10px;border-radius:2px;letter-spacing:1px;font-family:var(--mono)}
+.hdr-pill.stable{background:rgba(0,255,135,.12);color:var(--green);border:1px solid var(--green-dim)}
+.hdr-pill.warning{background:rgba(255,212,59,.12);color:var(--yellow);border:1px solid #996600}
+.hdr-pill.critical{background:rgba(255,59,59,.15);color:var(--red);border:1px solid #7a0000}
+#main{display:grid;grid-template-columns:220px 1fr 280px;flex:1;overflow:hidden}
+.panel{background:var(--bg2);border-right:1px solid var(--border);overflow-y:auto;overflow-x:hidden}
+.panel:last-child{border-right:none}
+.panel-title{font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim);padding:8px 12px 6px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:6px}
+.panel-title .dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+.sect{padding:10px 12px;border-bottom:1px solid var(--border)}
+.sect-label{font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-dim);margin-bottom:8px}
+.ctrl-row{display:flex;flex-direction:column;gap:4px;margin-bottom:10px}
+.ctrl-row label{font-size:10px;color:var(--text-dim);display:flex;justify-content:space-between}
+.ctrl-row label span{color:var(--blue)}
+input[type=range]{width:100%;height:3px;-webkit-appearance:none;appearance:none;background:var(--border2);border-radius:2px;outline:none}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:12px;height:12px;border-radius:50%;background:var(--blue);cursor:pointer;border:2px solid var(--bg)}
+select{width:100%;background:var(--bg3);border:1px solid var(--border2);color:var(--text);font-family:var(--mono);font-size:11px;padding:5px 8px;border-radius:2px;outline:none;cursor:pointer}
+select:focus{border-color:var(--blue)}
+.btn{width:100%;padding:7px 10px;font-family:var(--mono);font-size:11px;letter-spacing:1px;border-radius:2px;cursor:pointer;border:1px solid;transition:all .15s;text-transform:uppercase;margin-bottom:6px;text-align:left}
+.btn-run{background:rgba(0,255,135,.08);border-color:var(--green-dim);color:var(--green)}
+.btn-run:hover{background:rgba(0,255,135,.18)}
+.btn-run.running{animation:pg 1s infinite}
+.btn-crisis{background:rgba(255,212,59,.08);border-color:#996600;color:var(--yellow)}
+.btn-crisis:hover{background:rgba(255,212,59,.18)}
+.btn-rebel{background:rgba(255,107,26,.08);border-color:#7a3300;color:var(--orange)}
+.btn-rebel:hover{background:rgba(255,107,26,.2)}
+@keyframes pg{0%,100%{box-shadow:0 0 0 0 rgba(0,255,135,.3)}50%{box-shadow:0 0 8px 2px rgba(0,255,135,.15)}}
+.metrics-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:10px 12px}
+.mcard{background:var(--bg3);border:1px solid var(--border);border-radius:2px;padding:8px 10px}
+.mcard-label{font-size:9px;color:var(--text-dim);letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.mcard-val{font-family:var(--sans);font-size:20px;font-weight:700;line-height:1}
+.c-green{color:var(--green)}
+.c-yellow{color:var(--yellow)}
+.c-red{color:var(--red)}
+.c-blue{color:var(--blue)}
+.c-teal{color:var(--teal)}
+#health-score-wrap{padding:12px;text-align:center;border-bottom:1px solid var(--border)}
+#health-label{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim);margin-bottom:4px}
+#health-val{font-family:var(--sans);font-size:52px;font-weight:700;line-height:1;letter-spacing:-2px}
+#health-trend{font-size:11px;margin-top:4px;letter-spacing:1px}
+#crisis-banner{margin:10px 12px;padding:8px 10px;background:rgba(255,212,59,.06);border:1px solid #664d00;border-radius:2px;display:none}
+#crisis-banner.active{display:block}
+.crisis-title{font-size:10px;color:var(--yellow);letter-spacing:1px;margin-bottom:4px}
+.crisis-item{font-size:11px;color:var(--text);margin:2px 0}
+.crisis-item::before{content:'⚡ '}
+.agent-row{padding:8px 12px;border-bottom:1px solid var(--border)}
+.agent-header{display:flex;align-items:center;gap:8px;margin-bottom:4px}
+.agent-name{font-family:var(--sans);font-size:13px;font-weight:600;color:var(--text-bright)}
+.agent-decision{font-size:11px;color:var(--text);padding-left:30px;line-height:1.4}
+.agent-decision::before{content:'→ ';color:var(--text-dim)}
+#rebel-panel{margin:10px 12px;padding:10px;border:1px solid #7a3300;border-radius:2px;background:rgba(255,107,26,.05);display:none}
+#rebel-panel.active{display:block;animation:rp 2s infinite}
+@keyframes rp{0%,100%{border-color:#7a3300}50%{border-color:var(--orange)}}
+#rebel-title{font-family:var(--sans);font-size:13px;font-weight:700;color:var(--orange);letter-spacing:1px}
+#timeline{background:var(--bg2);border-top:1px solid var(--border);height:110px;overflow-y:auto;flex-shrink:0}
+#timeline-header{position:sticky;top:0;background:var(--bg2);padding:5px 16px;border-bottom:1px solid var(--border);font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim)}
+#timeline-feed{padding:4px 16px 8px}
+.tl-entry{font-size:11px;padding:3px 0;border-bottom:1px solid rgba(30,45,61,.5);color:var(--text)}
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
+</style>
+</head>
+<body>
+<div id="header">
+<div class="logo">🏛 <span>CIVIC</span>MIND — AI GOVERNANCE CONTROL ROOM</div>
+<div class="status-bar">
+<span id="sys-status-pill" class="hdr-pill stable">● STABLE</span>
+<span id="week-counter" style="color:var(--blue);font-size:13px;font-weight:bold">WEEK 00 / 20</span>
+</div>
+</div>
+<div id="main">
+<div class="panel">
+<div class="panel-title"><span class="dot"></span>CONTROL SYSTEM</div>
+<div class="sect">
+<div class="sect-label">Simulation Parameters</div>
+<div class="ctrl-row">
+<label>Difficulty <span id="diff-val">8</span></label>
+<input type="range" id="diff-slider" min="1" max="10" value="8" oninput="document.getElementById('diff-val').textContent=this.value">
+</div>
+</div>
+<div class="sect">
+<div class="sect-label">Policy Mode</div>
+<select id="policy-mode">
+<option value="surveillance">🔍 Surveillance State</option>
+<option value="welfare">❤ Welfare State</option>
+<option value="conservative">📊 Conservative</option>
+</select>
+</div>
+<div class="sect">
+<div class="sect-label">Actions</div>
+<div style="font-size:10px;color:var(--text-dim);margin-bottom:8px;">Use Streamlit buttons below ↓</div>
+</div>
+</div>
+<div class="panel">
+<div class="panel-title"><span class="dot" style="background:var(--blue)"></span>CITY CORE</div>
+<div id="health-score-wrap">
+<div id="health-label">SYSTEM HEALTH SCORE</div>
+<div id="health-val" class="c-green">82%</div>
+<div id="health-trend" style="color:var(--text-dim)">▶ STABLE</div>
+</div>
+<div id="crisis-banner">
+<div class="crisis-title">⚡ ACTIVE CRISES</div>
+<div id="crisis-list"></div>
+</div>
+<div class="metrics-grid">
+<div class="mcard">
+<div class="mcard-label">TRUST SCORE</div>
+<div class="mcard-val c-blue" id="m-trust">75%</div>
+</div>
+<div class="mcard">
+<div class="mcard-label">UNREST</div>
+<div class="mcard-val c-yellow" id="m-unrest">20%</div>
+</div>
+<div class="mcard">
+<div class="mcard-label">GDP INDEX</div>
+<div class="mcard-val c-green" id="m-gdp">1.00</div>
+</div>
+<div class="mcard">
+<div class="mcard-label">SURVIVAL</div>
+<div class="mcard-val c-teal" id="m-survival">100%</div>
+</div>
+</div>
+</div>
+<div class="panel">
+<div class="panel-title"><span class="dot" style="background:var(--orange)"></span>INTELLIGENCE VIEW</div>
+<div style="padding:8px 12px 0;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-dim)">AGENT DECISIONS</div>
+<div id="agents-panel">
+<div class="agent-row">
+<div class="agent-header">
+<div class="agent-name">Mayor</div>
+</div>
+<div class="agent-decision">Monitoring situation</div>
+</div>
+</div>
+<div style="padding:8px 12px 4px;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-dim)">REBEL STATUS</div>
+<div id="rebel-panel">
+<div id="rebel-title">🚨 REBEL ACTIVE 🚨</div>
+<div style="font-size:14px;margin:10px 0;text-align:center;color:var(--orange)">Strength: <span id="rebel-strength">45</span>%</div>
+<div style="text-align:center;color:var(--red)">⚠️ GOVERNMENT UNDER THREAT ⚠️</div>
+</div>
+<div id="no-rebel" style="padding:8px 12px;font-size:10px;color:var(--text-dim)">No rebel activity</div>
+</div>
+</div>
+<div id="timeline">
+<div id="timeline-header">📜 LIVE SYSTEM FEED</div>
+<div id="timeline-feed">
+<div class="tl-entry">Week 00 | System initialized</div>
+</div>
+</div>
+<script>
+// Listen for updates from Streamlit
+window.addEventListener('message', function(event) {
+    if (event.data.type === 'streamlit:render') {
+        const data = event.data.args;
+        if (data && data.state) {
+            updateUI(data.state);
+        }
+    }
+});
+
+function updateUI(state) {
+    // Update header
+    document.getElementById('week-counter').textContent = `WEEK ${state.week} / ${state.max_weeks}`;
+    
+    // Update status pill
+    const pill = document.getElementById('sys-status-pill');
+    if (state.health > 0.7) {
+        pill.className = 'hdr-pill stable';
+        pill.textContent = '● STABLE';
+    } else if (state.health > 0.4) {
+        pill.className = 'hdr-pill warning';
+        pill.textContent = '● STRAINED';
+    } else {
+        pill.className = 'hdr-pill critical';
+        pill.textContent = '● CRITICAL';
+    }
+    
+    // Update health score
+    const healthVal = document.getElementById('health-val');
+    healthVal.textContent = Math.round(state.health * 100) + '%';
+    if (state.health > 0.7) {
+        healthVal.className = 'c-green';
+    } else if (state.health > 0.4) {
+        healthVal.className = 'c-yellow';
+    } else {
+        healthVal.className = 'c-red';
+    }
+    
+    document.getElementById('health-trend').textContent = state.health_trend || '▶ STABLE';
+    
+    // Update metrics
+    document.getElementById('m-trust').textContent = Math.round(state.trust * 100) + '%';
+    document.getElementById('m-unrest').textContent = Math.round(state.unrest * 100) + '%';
+    document.getElementById('m-gdp').textContent = state.gdp.toFixed(2);
+    document.getElementById('m-survival').textContent = Math.round(state.survival * 100) + '%';
+    
+    // Update crises
+    const crisisBanner = document.getElementById('crisis-banner');
+    const crisisList = document.getElementById('crisis-list');
+    if (state.crises && state.crises.length > 0) {
+        crisisBanner.classList.add('active');
+        crisisList.innerHTML = state.crises.map(c => `<div class="crisis-item">${c}</div>`).join('');
+    } else {
+        crisisBanner.classList.remove('active');
+    }
+    
+    // Update agents
+    const agentsPanel = document.getElementById('agents-panel');
+    if (state.agents && state.agents.length > 0) {
+        agentsPanel.innerHTML = state.agents.map(a => `
+            <div class="agent-row">
+                <div class="agent-header">
+                    <div class="agent-name">${a.name}</div>
+                </div>
+                <div class="agent-decision">${a.action}</div>
+            </div>
+        `).join('');
+    }
+    
+    // Update rebel
+    const rebelPanel = document.getElementById('rebel-panel');
+    const noRebel = document.getElementById('no-rebel');
+    if (state.rebel_active) {
+        rebelPanel.classList.add('active');
+        rebelPanel.style.display = 'block';
+        noRebel.style.display = 'none';
+        document.getElementById('rebel-strength').textContent = Math.round(state.rebel_strength * 100);
+    } else {
+        rebelPanel.classList.remove('active');
+        rebelPanel.style.display = 'none';
+        noRebel.style.display = 'block';
+    }
+    
+    // Update timeline
+    const timelineFeed = document.getElementById('timeline-feed');
+    if (state.log && state.log.length > 0) {
+        timelineFeed.innerHTML = state.log.slice(-10).reverse().map(entry => 
+            `<div class="tl-entry">Week ${entry.week} | ${entry.event}</div>`
+        ).join('');
+    }
+}
+
+console.log('CivicMind Control Room loaded - waiting for backend data');
+</script>
+</body>
+</html>

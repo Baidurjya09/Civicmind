@@ -1,0 +1,1 @@
+"""CivicMind Training Package"""
