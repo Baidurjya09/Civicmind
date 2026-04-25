@@ -1,0 +1,138 @@
+{
+  "consistency": {
+    "mayor": {
+      "trained": [
+        "emergency_budget_release",
+        "emergency_budget_release",
+        "emergency_budget_release",
+        "emergency_budget_release",
+        "emergency_budget_release"
+      ],
+      "random": [
+        "hold",
+        "hold",
+        "invest_in_welfare",
+        "emergency_budget_release",
+        "emergency_budget_release"
+      ],
+      "consistent": true,
+      "learned": true
+    },
+    "health_minister": {
+      "trained": [
+        "hold",
+        "hold",
+        "hold",
+        "hold",
+        "hold"
+      ],
+      "random": [
+        "hold",
+        "increase_hospital_staff",
+        "hold",
+        "increase_hospital_staff",
+        "increase_hospital_staff"
+      ],
+      "consistent": true,
+      "learned": true
+    },
+    "finance_officer": {
+      "trained": [
+        "hold",
+        "hold",
+        "hold",
+        "hold",
+        "hold"
+      ],
+      "random": [
+        "stimulus_package",
+        "hold",
+        "stimulus_package",
+        "issue_bonds",
+        "hold"
+      ],
+      "consistent": true,
+      "learned": true
+    },
+    "police_chief": {
+      "trained": [
+        "hold",
+        "hold",
+        "hold",
+        "hold",
+        "hold"
+      ],
+      "random": [
+        "hold",
+        "hold",
+        "hold",
+        "hold",
+        "hold"
+      ],
+      "consistent": true,
+      "learned": false
+    },
+    "infrastructure_head": {
+      "trained": [
+        "hold",
+        "hold",
+        "hold",
+        "hold",
+        "hold"
+      ],
+      "random": [
+        "hold",
+        "emergency_repairs",
+        "hold",
+        "emergency_repairs",
+        "emergency_repairs"
+      ],
+      "consistent": true,
+      "learned": true
+    },
+    "media_spokesperson": {
+      "trained": [
+        "social_media_campaign",
+        "social_media_campaign",
+        "social_media_campaign",
+        "social_media_campaign",
+        "social_media_campaign"
+      ],
+      "random": [
+        "hold",
+        "hold",
+        "social_media_campaign",
+        "press_conference",
+        "press_conference"
+      ],
+      "consistent": true,
+      "learned": true
+    }
+  },
+  "specialization": {
+    "actions": {
+      "mayor": "emergency_budget_release",
+      "health_minister": "hold",
+      "finance_officer": "hold",
+      "police_chief": "hold",
+      "infrastructure_head": "hold",
+      "media_spokesperson": "social_media_campaign"
+    },
+    "is_specialized": true
+  },
+  "context_awareness": {
+    "states": {
+      "CRISIS": {
+        "mayor": "emergency_budget_release",
+        "health_minister": "hold",
+        "finance_officer": "hold"
+      },
+      "SAFE": {
+        "mayor": "emergency_budget_release",
+        "health_minister": "hold",
+        "finance_officer": "hold"
+      }
+    },
+    "is_adaptive": false
+  }
+}

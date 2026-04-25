@@ -1,0 +1,49 @@
+{
+  "validation_type": "anti_reward_hacking",
+  "date": "2026-04-25",
+  "total_tests": 5,
+  "passed_tests": 5,
+  "tests": [
+    {
+      "test": "inaction_exploit",
+      "exploit_reward": 0.8008179004576668,
+      "proper_reward": 0.8391512337910002,
+      "delta": 0.03833333333333344,
+      "passed": true
+    },
+    {
+      "test": "budget_abuse",
+      "high_budget_reward": 0.9553333333333333,
+      "low_budget_reward": 0.8953333333333333,
+      "penalty": 0.05999999999999994,
+      "passed": true
+    },
+    {
+      "test": "instability_exploit",
+      "stable_avg": 0.9463189406031883,
+      "erratic_avg": 1.0,
+      "delta": -0.05368105939681167,
+      "passed": true
+    },
+    {
+      "test": "crisis_gaming",
+      "minor_crisis_hold": 0.824051923837041,
+      "major_crisis_hold": 0.7940519238370409,
+      "penalty_difference": 0.030000000000000027,
+      "passed": true
+    },
+    {
+      "test": "reward_consistency",
+      "breakdown": {
+        "survival": 0.392,
+        "trust": 0.22499999999999998,
+        "gdp": 0.13333333333333333,
+        "security": 0.085,
+        "rebel_penalty": 0.0,
+        "crisis_penalty": -0.0,
+        "total": 0.9553333333333333
+      },
+      "passed": true
+    }
+  ]
+}

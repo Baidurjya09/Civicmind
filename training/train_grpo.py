@@ -36,7 +36,15 @@ parser.add_argument("--n_samples_per_prompt", type=int, default=4, help="GRPO: s
 parser.add_argument("--output_dir", type=str, default="training/checkpoints/civicmind_grpo")
 parser.add_argument("--learning_rate", type=float, default=2e-5)
 parser.add_argument("--max_length", type=int, default=512)
+parser.add_argument("--max_samples", type=int, default=0, help="Use first N samples for quick proof runs (0 = all)")
+parser.add_argument("--seed", type=int, default=42, help="Random seed for reproducibility")
 args = parser.parse_args()
+
+# Reproducibility
+np.random.seed(args.seed)
+torch.manual_seed(args.seed)
+if torch.cuda.is_available():
+    torch.cuda.manual_seed_all(args.seed)
 
 # Check GPU
 print("Checking GPU...")
@@ -58,6 +66,9 @@ with open(dataset_path) as f:
         samples.append(json.loads(line))
 
 print(f"  ✅ Loaded {len(samples)} samples")
+if args.max_samples and args.max_samples > 0:
+    samples = samples[:args.max_samples]
+    print(f"  ✅ Using subset for this run: {len(samples)} samples")
 print()
 
 # Load model
@@ -105,6 +116,9 @@ print(f"  ✅ Batch size: {args.batch_size}")
 print(f"  ✅ Samples per prompt: {args.n_samples_per_prompt}")
 print(f"  ✅ Learning rate: {args.learning_rate}")
 print(f"  ✅ Max length: {args.max_length}")
+print(f"  ✅ Seed: {args.seed}")
+if args.max_samples and args.max_samples > 0:
+    print(f"  ✅ Max samples: {args.max_samples}")
 print()
 
 

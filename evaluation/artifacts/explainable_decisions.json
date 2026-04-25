@@ -1,0 +1,53 @@
+{
+  "scenario": "Disease Outbreak + Low Trust + Low Budget",
+  "initial_state": {
+    "trust": 0.42,
+    "budget": 175000,
+    "crises": [
+      "Disease Outbreak"
+    ]
+  },
+  "decisions": [
+    {
+      "agent": "mayor",
+      "action": "emergency_budget_release",
+      "confidence": 0.92,
+      "reasoning": "Emergency funding needed for crisis response"
+    },
+    {
+      "agent": "health_minister",
+      "action": "mass_vaccination",
+      "confidence": 0.95,
+      "reasoning": "High disease prevalence (0.02) requires immediate action"
+    },
+    {
+      "agent": "finance_officer",
+      "action": "issue_bonds",
+      "confidence": 0.88,
+      "reasoning": "Budget replenishment through bond issuance"
+    },
+    {
+      "agent": "police_chief",
+      "action": "community_policing",
+      "confidence": 0.85,
+      "reasoning": "Crime index (0.15) requires community engagement"
+    },
+    {
+      "agent": "infrastructure_head",
+      "action": "emergency_repairs",
+      "confidence": 0.87,
+      "reasoning": "Power grid health (0.85) critically low"
+    },
+    {
+      "agent": "media_spokesperson",
+      "action": "press_conference",
+      "confidence": 0.91,
+      "reasoning": "Public communication needed to restore trust"
+    }
+  ],
+  "outcome": {
+    "reward": 0.7390494185825982,
+    "new_trust": 0.5240176926176655,
+    "new_budget": 155000.0
+  }
+}

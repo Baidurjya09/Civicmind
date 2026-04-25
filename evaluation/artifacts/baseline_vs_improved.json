@@ -1,0 +1,5037 @@
+{
+  "baseline": {
+    "policy": "baseline",
+    "episodes": 8,
+    "mean_reward": 0.7934131474684177,
+    "final_reward": 0.7579176728160119,
+    "mean_confidence": 0.7239041653367065,
+    "final_confidence": 0.6602618465787009
+  },
+  "improved": {
+    "policy": "improved",
+    "episodes": 8,
+    "mean_reward": 0.9346745907875524,
+    "final_reward": 0.9457228384354486,
+    "mean_confidence": 0.9231901800659867,
+    "final_confidence": 0.9239178485960814
+  },
+  "deltas": {
+    "mean_reward_delta": 0.1412614433191347,
+    "mean_reward_pct": 17.804273066291444,
+    "mean_confidence_delta": 0.1992860147292802
+  },
+  "episodes": {
+    "baseline": [
+      {
+        "mean_reward": 0.7508780441404583,
+        "final_reward": 0.7295695395683335,
+        "mean_confidence": 0.6909266390191081,
+        "final_confidence": 0.6272893452817648,
+        "weeks": 20,
+        "rewards": [
+          0.8037735618044373,
+          0.6983906871787702,
+          0.6976865298800636,
+          0.6494918077450085,
+          0.6436518129349345,
+          0.6653359275313087,
+          0.6597821474005339,
+          0.9041819668602636,
+          0.9001583531639058,
+          0.8955410140544757,
+          0.8889192596996663,
+          0.887277230391906,
+          0.8816233927320094,
+          0.7597713701244981,
+          0.7568654407999793,
+          0.7557853860510757,
+          0.617401211400734,
+          0.6126699873879947,
+          0.6096842560992684,
+          0.7295695395683335
+        ],
+        "confidence": [
+          0.7738206178063196,
+          0.7078304206528592,
+          0.7072043104114156,
+          0.673412339127035,
+          0.6615854243316333,
+          0.6662475329001696,
+          0.6557283118499665,
+          0.788097128071954,
+          0.7801629805405775,
+          0.7717911255631716,
+          0.7592434505122971,
+          0.756278901745352,
+          0.7452819823941549,
+          0.6758794484615411,
+          0.6706865827867923,
+          0.6691057105017393,
+          0.5840293220218905,
+          0.5752917554936448,
+          0.5695660899278824,
+          0.6272893452817648
+        ],
+        "decisions": [
+          {
+            "week": 1,
+            "reward": 0.8038,
+            "trust": 0.7372,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 2,
+            "reward": 0.6984,
+            "trust": 0.7194,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 3,
+            "reward": 0.6977,
+            "trust": 0.7188,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 4,
+            "reward": 0.6495,
+            "trust": 0.7026,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 5,
+            "reward": 0.6437,
+            "trust": 0.6835,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 6,
+            "reward": 0.6653,
+            "trust": 0.6674,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 7,
+            "reward": 0.6598,
+            "trust": 0.6508,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 8,
+            "reward": 0.9042,
+            "trust": 0.6462,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 9,
+            "reward": 0.9002,
+            "trust": 0.6335,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 10,
+            "reward": 0.8955,
+            "trust": 0.6205,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 11,
+            "reward": 0.8889,
+            "trust": 0.6008,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 12,
+            "reward": 0.8873,
+            "trust": 0.5962,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 13,
+            "reward": 0.8816,
+            "trust": 0.5786,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 14,
+            "reward": 0.7598,
+            "trust": 0.5733,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 15,
+            "reward": 0.7569,
+            "trust": 0.5654,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 16,
+            "reward": 0.7558,
+            "trust": 0.5632,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 17,
+            "reward": 0.6174,
+            "trust": 0.5432,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 18,
+            "reward": 0.6127,
+            "trust": 0.5296,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 19,
+            "reward": 0.6097,
+            "trust": 0.5205,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 20,
+            "reward": 0.7296,
+            "trust": 0.5023,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          }
+        ]
+      },
+      {
+        "mean_reward": 0.8171123883058021,
+        "final_reward": 0.7579261576448444,
+        "mean_confidence": 0.7354425301323083,
+        "final_confidence": 0.6542041864018626,
+        "weeks": 20,
+        "rewards": [
+          0.80713949004248,
+          0.7039879658327313,
+          0.7005298743027005,
+          0.6977787473498624,
+          0.6946897715313259,
+          0.9366329295944852,
+          0.9330325685097803,
+          0.9269379338816396,
+          0.921884690098184,
+          0.9155747153170622,
+          0.9106817853430307,
+          0.9093569494424513,
+          0.9057949592833399,
+          0.7805023759899992,
+          0.7766700230172686,
+          0.7714592658222671,
+          0.7670930268018805,
+          0.765271989271256,
+          0.7593025470394548,
+          0.7579261576448444
+        ],
+        "confidence": [
+          0.7810797529693276,
+          0.7202677115977699,
+          0.713442906117634,
+          0.7085470617224849,
+          0.7022880409069678,
+          0.8278048940287748,
+          0.8205653018676804,
+          0.8091230335963899,
+          0.799315962024735,
+          0.787122905893485,
+          0.777995191391317,
+          0.7764904814817337,
+          0.7705436970244888,
+          0.6950214597620679,
+          0.6884306634387793,
+          0.6791534686047951,
+          0.671571359255553,
+          0.6688975484023549,
+          0.6569849761579639,
+          0.6542041864018626
+        ],
+        "decisions": [
+          {
+            "week": 1,
+            "reward": 0.8071,
+            "trust": 0.7492,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 2,
+            "reward": 0.704,
+            "trust": 0.7402,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 3,
+            "reward": 0.7005,
+            "trust": 0.7292,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 4,
+            "reward": 0.6978,
+            "trust": 0.7217,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 5,
+            "reward": 0.6947,
+            "trust": 0.7116,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 6,
+            "reward": 0.9366,
+            "trust": 0.6948,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 7,
+            "reward": 0.933,
+            "trust": 0.6831,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 8,
+            "reward": 0.9269,
+            "trust": 0.6651,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 9,
+            "reward": 0.9219,
+            "trust": 0.6495,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 10,
+            "reward": 0.9156,
+            "trust": 0.6301,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 11,
+            "reward": 0.9107,
+            "trust": 0.6158,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 12,
+            "reward": 0.9094,
+            "trust": 0.6141,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 13,
+            "reward": 0.9058,
+            "trust": 0.6052,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 14,
+            "reward": 0.7805,
+            "trust": 0.5905,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 15,
+            "reward": 0.7767,
+            "trust": 0.5806,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 16,
+            "reward": 0.7715,
+            "trust": 0.5663,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 17,
+            "reward": 0.7671,
+            "trust": 0.5548,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 18,
+            "reward": 0.7653,
+            "trust": 0.5511,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 19,
+            "reward": 0.7593,
+            "trust": 0.5319,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 20,
+            "reward": 0.7579,
+            "trust": 0.5274,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          }
+        ]
+      },
+      {
+        "mean_reward": 0.7873544502567756,
+        "final_reward": 0.7524094358944237,
+        "mean_confidence": 0.7257775700476201,
+        "final_confidence": 0.6655607244723472,
+        "weeks": 20,
+        "rewards": [
+          0.805205452413611,
+          0.7039918360044511,
+          0.7013951567050946,
+          0.6975972094233145,
+          0.6934594287642144,
+          0.9897786650366112,
+          0.9364234287141514,
+          0.9309000091925822,
+          0.9253160372198702,
+          0.9236189664598916,
+          0.9175394543925488,
+          0.913851110636826,
+          0.9121548322715382,
+          0.6471943018944311,
+          0.6411896245998464,
+          0.6375698746715501,
+          0.6348277434170503,
+          0.6287251976923164,
+          0.7539412397311893,
+          0.7524094358944237
+        ],
+        "confidence": [
+          0.7766861759141956,
+          0.7199688320881719,
+          0.7151348193334163,
+          0.7074909687252104,
+          0.6995873366441999,
+          0.860865578108521,
+          0.8275929126731043,
+          0.8170806967333841,
+          0.8068629751228993,
+          0.8045141629153467,
+          0.7922184419516851,
+          0.7847293097344628,
+          0.7821813947010101,
+          0.634004661162803,
+          0.6231364690568377,
+          0.6165354957638246,
+          0.6123284097343125,
+          0.600480628959813,
+          0.6685914071568565,
+          0.6655607244723472
+        ],
+        "decisions": [
+          {
+            "week": 1,
+            "reward": 0.8052,
+            "trust": 0.7418,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 2,
+            "reward": 0.704,
+            "trust": 0.7395,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 3,
+            "reward": 0.7014,
+            "trust": 0.7319,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 4,
+            "reward": 0.6976,
+            "trust": 0.7196,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 5,
+            "reward": 0.6935,
+            "trust": 0.7071,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 6,
+            "reward": 0.9898,
+            "trust": 0.7033,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 7,
+            "reward": 0.9364,
+            "trust": 0.6946,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 8,
+            "reward": 0.9309,
+            "trust": 0.678,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 9,
+            "reward": 0.9253,
+            "trust": 0.6621,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 10,
+            "reward": 0.9236,
+            "trust": 0.6589,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 11,
+            "reward": 0.9175,
+            "trust": 0.639,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 12,
+            "reward": 0.9139,
+            "trust": 0.6269,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 13,
+            "reward": 0.9122,
+            "trust": 0.6233,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 14,
+            "reward": 0.6472,
+            "trust": 0.6179,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 15,
+            "reward": 0.6412,
+            "trust": 0.6011,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 16,
+            "reward": 0.6376,
+            "trust": 0.5908,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 17,
+            "reward": 0.6348,
+            "trust": 0.5848,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 18,
+            "reward": 0.6287,
+            "trust": 0.566,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 19,
+            "reward": 0.7539,
+            "trust": 0.5643,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 20,
+            "reward": 0.7524,
+            "trust": 0.5594,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          }
+        ]
+      },
+      {
+        "mean_reward": 0.7719330872362944,
+        "final_reward": 0.7593276033905471,
+        "mean_confidence": 0.7160625236291451,
+        "final_confidence": 0.6637241705900696,
+        "weeks": 20,
+        "rewards": [
+          0.8058633473600366,
+          0.7034167747918044,
+          0.7023956975267944,
+          0.701023031326472,
+          0.6962826450835131,
+          0.990801270248052,
+          0.935879911873502,
+          0.6792118821082593,
+          0.6762694336944004,
+          0.6701156424334261,
+          0.6677627055085142,
+          0.9062839786771602,
+          0.9037892557700822,
+          0.7820528601246975,
+          0.777210130814332,
+          0.7762671069475742,
+          0.7708894635126677,
+          0.7697640326355959,
+          0.7640549708984556,
+          0.7593276033905471
+        ],
+        "confidence": [
+          0.7782779623185634,
+          0.7193776947429467,
+          0.7176010017990279,
+          0.7161714734597717,
+          0.7065884240746595,
+          0.865092679641441,
+          0.8275936925541465,
+          0.6692241845599898,
+          0.6638753648128517,
+          0.6525480638654295,
+          0.6486577768731766,
+          0.7789197733537989,
+          0.7745835031201526,
+          0.7062903533652448,
+          0.6965611689797564,
+          0.6952981468739867,
+          0.6848397412779571,
+          0.6835706072606681,
+          0.6724546890592635,
+          0.6637241705900696
+        ],
+        "decisions": [
+          {
+            "week": 1,
+            "reward": 0.8059,
+            "trust": 0.7446,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 2,
+            "reward": 0.7034,
+            "trust": 0.7389,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 3,
+            "reward": 0.7024,
+            "trust": 0.7362,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 4,
+            "reward": 0.701,
+            "trust": 0.7347,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 5,
+            "reward": 0.6963,
+            "trust": 0.7192,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 6,
+            "reward": 0.9908,
+            "trust": 0.7114,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 7,
+            "reward": 0.9359,
+            "trust": 0.6952,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 8,
+            "reward": 0.6792,
+            "trust": 0.657,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 9,
+            "reward": 0.6763,
+            "trust": 0.6487,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 10,
+            "reward": 0.6701,
+            "trust": 0.6311,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 11,
+            "reward": 0.6678,
+            "trust": 0.6253,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 12,
+            "reward": 0.9063,
+            "trust": 0.6233,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 13,
+            "reward": 0.9038,
+            "trust": 0.6167,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 14,
+            "reward": 0.7821,
+            "trust": 0.6137,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 15,
+            "reward": 0.7772,
+            "trust": 0.598,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 16,
+            "reward": 0.7763,
+            "trust": 0.5963,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 17,
+            "reward": 0.7709,
+            "trust": 0.5797,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 18,
+            "reward": 0.7698,
+            "trust": 0.5782,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 19,
+            "reward": 0.7641,
+            "trust": 0.5605,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 20,
+            "reward": 0.7593,
+            "trust": 0.5469,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          }
+        ]
+      },
+      {
+        "mean_reward": 0.8175612007014215,
+        "final_reward": 0.7599633187441457,
+        "mean_confidence": 0.7348724094540151,
+        "final_confidence": 0.6544903639898476,
+        "weeks": 20,
+        "rewards": [
+          0.8016439382010757,
+          0.6980726116173676,
+          0.6924859447463945,
+          0.6917723049293166,
+          0.6870526988761178,
+          0.9328332493073613,
+          0.9315271301177099,
+          0.927800851372654,
+          0.9238716380444759,
+          0.9197577250264128,
+          0.9148878824152681,
+          0.9106257258519348,
+          0.9059417106529931,
+          0.7827324120354373,
+          0.7821087667038773,
+          0.7777024146800163,
+          0.7749655775434207,
+          0.7693551751994884,
+          0.7661229379629595,
+          0.7599633187441457
+        ],
+        "confidence": [
+          0.7704097533225194,
+          0.7081919493313173,
+          0.6975309362626041,
+          0.6963021413469734,
+          0.6869664873333574,
+          0.8196701629732039,
+          0.8172980961771733,
+          0.8097561087406799,
+          0.8025541302300525,
+          0.7954079957278651,
+          0.7862867826715056,
+          0.7780977382538434,
+          0.7696663552441657,
+          0.6976624000266944,
+          0.6969503699981852,
+          0.6880028554561115,
+          0.6837405644348151,
+          0.6723243090470559,
+          0.6661386885123325,
+          0.6544903639898476
+        ],
+        "decisions": [
+          {
+            "week": 1,
+            "reward": 0.8016,
+            "trust": 0.7322,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 2,
+            "reward": 0.6981,
+            "trust": 0.7206,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 3,
+            "reward": 0.6925,
+            "trust": 0.7037,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 4,
+            "reward": 0.6918,
+            "trust": 0.7018,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 5,
+            "reward": 0.6871,
+            "trust": 0.6869,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 6,
+            "reward": 0.9328,
+            "trust": 0.6814,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 7,
+            "reward": 0.9315,
+            "trust": 0.6777,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 8,
+            "reward": 0.9278,
+            "trust": 0.6655,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 9,
+            "reward": 0.9239,
+            "trust": 0.6543,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 10,
+            "reward": 0.9198,
+            "trust": 0.6434,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 11,
+            "reward": 0.9149,
+            "trust": 0.6291,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 12,
+            "reward": 0.9106,
+            "trust": 0.6161,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 13,
+            "reward": 0.9059,
+            "trust": 0.6031,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 14,
+            "reward": 0.7827,
+            "trust": 0.5937,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 15,
+            "reward": 0.7821,
+            "trust": 0.5929,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 16,
+            "reward": 0.7777,
+            "trust": 0.5784,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 17,
+            "reward": 0.775,
+            "trust": 0.5722,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 18,
+            "reward": 0.7694,
+            "trust": 0.5537,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 19,
+            "reward": 0.7661,
+            "trust": 0.5439,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 20,
+            "reward": 0.76,
+            "trust": 0.5256,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          }
+        ]
+      },
+      {
+        "mean_reward": 0.7490692408493482,
+        "final_reward": 0.7559224090258108,
+        "mean_confidence": 0.6853440506091347,
+        "final_confidence": 0.6452347099237021,
+        "weeks": 20,
+        "rewards": [
+          0.8053787860574878,
+          0.7050308778752608,
+          0.7012428228527624,
+          0.6980699411553114,
+          0.6942254683309756,
+          0.9911302160908146,
+          0.6604917396313821,
+          0.6555669731774371,
+          0.6521952671535057,
+          0.650027459762356,
+          0.6465570239517598,
+          0.8955093182621346,
+          0.8907821210962057,
+          0.7669721366707513,
+          0.7658449392826007,
+          0.7646482148264305,
+          0.7621716751619938,
+          0.7614304606627901,
+          0.7581869659591943,
+          0.7559224090258108
+        ],
+        "confidence": [
+          0.7772917160291675,
+          0.721732188026057,
+          0.7153147827651289,
+          0.7088602714536266,
+          0.7013370309515279,
+          0.8643171318967382,
+          0.6415266935388553,
+          0.631860399782501,
+          0.6250085671363184,
+          0.6214740792478657,
+          0.61519675040949,
+          0.7471975786372989,
+          0.7375565969102256,
+          0.664808407589011,
+          0.663988348550036,
+          0.6617400532139669,
+          0.6568467106083076,
+          0.6560636957699993,
+          0.6495252997428703,
+          0.6452347099237021
+        ],
+        "decisions": [
+          {
+            "week": 1,
+            "reward": 0.8054,
+            "trust": 0.743,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 2,
+            "reward": 0.705,
+            "trust": 0.7421,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 3,
+            "reward": 0.7012,
+            "trust": 0.7325,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 4,
+            "reward": 0.6981,
+            "trust": 0.722,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 5,
+            "reward": 0.6942,
+            "trust": 0.71,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 6,
+            "reward": 0.9911,
+            "trust": 0.7093,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 7,
+            "reward": 0.6605,
+            "trust": 0.6183,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 8,
+            "reward": 0.6556,
+            "trust": 0.6029,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 9,
+            "reward": 0.6522,
+            "trust": 0.5918,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 10,
+            "reward": 0.65,
+            "trust": 0.5866,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 11,
+            "reward": 0.6466,
+            "trust": 0.5769,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 12,
+            "reward": 0.8955,
+            "trust": 0.5659,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 13,
+            "reward": 0.8908,
+            "trust": 0.5503,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 14,
+            "reward": 0.767,
+            "trust": 0.5399,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 15,
+            "reward": 0.7658,
+            "trust": 0.5395,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 16,
+            "reward": 0.7646,
+            "trust": 0.536,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 17,
+            "reward": 0.7622,
+            "trust": 0.5281,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 18,
+            "reward": 0.7614,
+            "trust": 0.5273,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 19,
+            "reward": 0.7582,
+            "trust": 0.5167,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 20,
+            "reward": 0.7559,
+            "trust": 0.5099,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          }
+        ]
+      },
+      {
+        "mean_reward": 0.8250319480919123,
+        "final_reward": 0.7793442053838504,
+        "mean_confidence": 0.7507998820384327,
+        "final_confidence": 0.6944225615283894,
+        "weeks": 20,
+        "rewards": [
+          0.8042421363069175,
+          0.6987966178708396,
+          0.6973334062148847,
+          0.6968235372812415,
+          0.6945170963060433,
+          0.9379374650755851,
+          0.9326800314139115,
+          0.929551413947172,
+          0.9268542160400538,
+          0.9264442235220093,
+          0.9211317437917947,
+          0.9193178218261968,
+          0.9163174891503898,
+          0.7910928200015378,
+          0.7909843983648757,
+          0.7874730950436563,
+          0.7851774778009675,
+          0.783295687392836,
+          0.7813240791034806,
+          0.7793442053838504
+        ],
+        "confidence": [
+          0.7748997545130578,
+          0.7100468543084544,
+          0.7072796437870148,
+          0.7064276695112289,
+          0.7021073382105103,
+          0.83084828192366,
+          0.8206200652735182,
+          0.8144267565046248,
+          0.810069873572429,
+          0.809837594528438,
+          0.8000201719968312,
+          0.7975417372422675,
+          0.791978678051108,
+          0.7153301859189621,
+          0.715244436566296,
+          0.7087219574529406,
+          0.7055084411814199,
+          0.7022891359536745,
+          0.6983765027438287,
+          0.6944225615283894
+        ],
+        "decisions": [
+          {
+            "week": 1,
+            "reward": 0.8042,
+            "trust": 0.739,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 2,
+            "reward": 0.6988,
+            "trust": 0.7238,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 3,
+            "reward": 0.6973,
+            "trust": 0.7194,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 4,
+            "reward": 0.6968,
+            "trust": 0.7182,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 5,
+            "reward": 0.6945,
+            "trust": 0.7114,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 6,
+            "reward": 0.9379,
+            "trust": 0.7,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 7,
+            "reward": 0.9327,
+            "trust": 0.6837,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 8,
+            "reward": 0.9296,
+            "trust": 0.6737,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 9,
+            "reward": 0.9269,
+            "trust": 0.6673,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 10,
+            "reward": 0.9264,
+            "trust": 0.6673,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 11,
+            "reward": 0.9211,
+            "trust": 0.652,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 12,
+            "reward": 0.9193,
+            "trust": 0.6487,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 13,
+            "reward": 0.9163,
+            "trust": 0.64,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 14,
+            "reward": 0.7911,
+            "trust": 0.6227,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 15,
+            "reward": 0.791,
+            "trust": 0.6227,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 16,
+            "reward": 0.7875,
+            "trust": 0.6125,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 17,
+            "reward": 0.7852,
+            "trust": 0.6081,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 18,
+            "reward": 0.7833,
+            "trust": 0.6033,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 19,
+            "reward": 0.7813,
+            "trust": 0.597,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 20,
+            "reward": 0.7793,
+            "trust": 0.5906,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          }
+        ]
+      },
+      {
+        "mean_reward": 0.8283648201653298,
+        "final_reward": 0.7688787128761395,
+        "mean_confidence": 0.7520077177638884,
+        "final_confidence": 0.6771687104416237,
+        "weeks": 20,
+        "rewards": [
+          0.8066799180138583,
+          0.7056773282174085,
+          0.700142459631499,
+          0.6973346118706647,
+          0.6927027764999449,
+          0.9894909548282579,
+          0.987266868661358,
+          0.9309279592929444,
+          0.9303564466744617,
+          0.9262986958323018,
+          0.9210293427927858,
+          0.9152952757043492,
+          0.9121842830699475,
+          0.7882372720919266,
+          0.786025043157837,
+          0.7823833675228273,
+          0.7797784597995298,
+          0.7735536600881718,
+          0.7730529666803823,
+          0.7688787128761395
+        ],
+        "confidence": [
+          0.7805719991205373,
+          0.724617307372569,
+          0.7138709457255299,
+          0.708517417856048,
+          0.7003873274001037,
+          0.8630307585703713,
+          0.8595109115800268,
+          0.8198295819969876,
+          0.8187523641757288,
+          0.8105450301871993,
+          0.8011927560339592,
+          0.7903440603731855,
+          0.7849695439619042,
+          0.7112723427331715,
+          0.7077517690742605,
+          0.7016466906423034,
+          0.6968221715560108,
+          0.6848517605349845,
+          0.6845009059412617,
+          0.6771687104416237
+        ],
+        "decisions": [
+          {
+            "week": 1,
+            "reward": 0.8067,
+            "trust": 0.7487,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 2,
+            "reward": 0.7057,
+            "trust": 0.7478,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 3,
+            "reward": 0.7001,
+            "trust": 0.7307,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 4,
+            "reward": 0.6973,
+            "trust": 0.7222,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 5,
+            "reward": 0.6927,
+            "trust": 0.7098,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 6,
+            "reward": 0.9895,
+            "trust": 0.7085,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 7,
+            "reward": 0.9873,
+            "trust": 0.7034,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 8,
+            "reward": 0.9309,
+            "trust": 0.684,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 9,
+            "reward": 0.9304,
+            "trust": 0.6823,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 10,
+            "reward": 0.9263,
+            "trust": 0.6691,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 11,
+            "reward": 0.921,
+            "trust": 0.6547,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 12,
+            "reward": 0.9153,
+            "trust": 0.6376,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 13,
+            "reward": 0.9122,
+            "trust": 0.6295,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 14,
+            "reward": 0.7882,
+            "trust": 0.6172,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 15,
+            "reward": 0.786,
+            "trust": 0.6121,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 16,
+            "reward": 0.7824,
+            "trust": 0.603,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 17,
+            "reward": 0.7798,
+            "trust": 0.5954,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 18,
+            "reward": 0.7736,
+            "trust": 0.5764,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 19,
+            "reward": 0.7731,
+            "trust": 0.5763,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 20,
+            "reward": 0.7689,
+            "trust": 0.5651,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          }
+        ]
+      }
+    ],
+    "improved": [
+      {
+        "mean_reward": 0.9172060520859808,
+        "final_reward": 0.9531466666666667,
+        "mean_confidence": 0.9177024773438063,
+        "final_confidence": 0.95,
+        "weeks": 20,
+        "rewards": [
+          0.8037735618044373,
+          0.7560573538454368,
+          0.8330198632133972,
+          0.8723639111668217,
+          0.8711933333333333,
+          0.9460266666666667,
+          0.94336,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.9422827365975679,
+          0.9393768072730491,
+          0.9382967525241453,
+          0.7999125778738038,
+          0.8154974774209592,
+          0.9298133333333333,
+          0.9531466666666667
+        ],
+        "confidence": [
+          0.7738206178063196,
+          0.8025470873195257,
+          0.9076376437447492,
+          0.929800151141752,
+          0.9291563333333334,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.9354636537229206,
+          0.9302707880481718,
+          0.9286899157631188,
+          0.8436135272832701,
+          0.8730498287129664,
+          0.95,
+          0.95
+        ],
+        "decisions": [
+          {
+            "week": 1,
+            "reward": 0.8038,
+            "trust": 0.7372,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 2,
+            "reward": 0.7561,
+            "trust": 0.8594,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "stimulus_package",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 3,
+            "reward": 0.833,
+            "trust": 0.9988,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "stimulus_package",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 4,
+            "reward": 0.8724,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 5,
+            "reward": 0.8712,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 6,
+            "reward": 0.946,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 7,
+            "reward": 0.9434,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 8,
+            "reward": 1.0,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 9,
+            "reward": 1.0,
+            "trust": 0.9873,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 10,
+            "reward": 1.0,
+            "trust": 0.9743,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 11,
+            "reward": 1.0,
+            "trust": 0.9545,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 12,
+            "reward": 1.0,
+            "trust": 0.95,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 13,
+            "reward": 1.0,
+            "trust": 0.9324,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 14,
+            "reward": 0.9423,
+            "trust": 0.9271,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 15,
+            "reward": 0.9394,
+            "trust": 0.9191,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 16,
+            "reward": 0.9383,
+            "trust": 0.9169,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 17,
+            "reward": 0.7999,
+            "trust": 0.897,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 18,
+            "reward": 0.8155,
+            "trust": 0.9434,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 19,
+            "reward": 0.9298,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 20,
+            "reward": 0.9531,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          }
+        ]
+      },
+      {
+        "mean_reward": 0.9406558735999605,
+        "final_reward": 0.9299598947170259,
+        "mean_confidence": 0.9171131379165057,
+        "final_confidence": 0.8861659590397547,
+        "weeks": 20,
+        "rewards": [
+          0.80713949004248,
+          0.761654632499398,
+          0.8330955574686015,
+          0.9149329135631552,
+          0.9138333333333333,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.9525361130621807,
+          0.9487037600894502,
+          0.9434930028944486,
+          0.939126763874062,
+          0.9373057263434375,
+          0.9313362841116362,
+          0.9299598947170259
+        ],
+        "confidence": [
+          0.7810797529693276,
+          0.8149843782644366,
+          0.908202556607731,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.9269832323999599,
+          0.9203924360766715,
+          0.9111152412426871,
+          0.903533131893445,
+          0.9008593210402469,
+          0.8889467487958559,
+          0.8861659590397547
+        ],
+        "decisions": [
+          {
+            "week": 1,
+            "reward": 0.8071,
+            "trust": 0.7492,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 2,
+            "reward": 0.7617,
+            "trust": 0.8802,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "stimulus_package",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 3,
+            "reward": 0.8331,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "stimulus_package",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 4,
+            "reward": 0.9149,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 5,
+            "reward": 0.9138,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 6,
+            "reward": 1.0,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 7,
+            "reward": 1.0,
+            "trust": 0.9883,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 8,
+            "reward": 1.0,
+            "trust": 0.9703,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 9,
+            "reward": 1.0,
+            "trust": 0.9547,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 10,
+            "reward": 1.0,
+            "trust": 0.9353,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 11,
+            "reward": 1.0,
+            "trust": 0.921,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 12,
+            "reward": 1.0,
+            "trust": 0.9193,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 13,
+            "reward": 1.0,
+            "trust": 0.9104,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 14,
+            "reward": 0.9525,
+            "trust": 0.8958,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 15,
+            "reward": 0.9487,
+            "trust": 0.8858,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 16,
+            "reward": 0.9435,
+            "trust": 0.8715,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 17,
+            "reward": 0.9391,
+            "trust": 0.86,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 18,
+            "reward": 0.9373,
+            "trust": 0.8563,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 19,
+            "reward": 0.9313,
+            "trust": 0.8371,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 20,
+            "reward": 0.93,
+            "trust": 0.8326,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          }
+        ]
+      },
+      {
+        "mean_reward": 0.9309167273606533,
+        "final_reward": 0.9571615294965677,
+        "mean_confidence": 0.9261852297340853,
+        "final_confidence": 0.95,
+        "weeks": 20,
+        "rewards": [
+          0.805205452413611,
+          0.7616585026711179,
+          0.8331501679413518,
+          0.9153888737283895,
+          0.9138333333333333,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.8160823035244866,
+          0.843081050770877,
+          0.9406933333333333,
+          0.9380266666666667,
+          0.93536,
+          0.9586933333333333,
+          0.9571615294965677
+        ],
+        "confidence": [
+          0.7766861759141956,
+          0.8146854987548386,
+          0.9082325923677435,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.8604057497209486,
+          0.9136945779239825,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95
+        ],
+        "decisions": [
+          {
+            "week": 1,
+            "reward": 0.8052,
+            "trust": 0.7418,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 2,
+            "reward": 0.7617,
+            "trust": 0.8795,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "stimulus_package",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 3,
+            "reward": 0.8332,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "stimulus_package",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 4,
+            "reward": 0.9154,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 5,
+            "reward": 0.9138,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 6,
+            "reward": 1.0,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 7,
+            "reward": 1.0,
+            "trust": 0.9913,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 8,
+            "reward": 1.0,
+            "trust": 0.9747,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 9,
+            "reward": 1.0,
+            "trust": 0.9588,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 10,
+            "reward": 1.0,
+            "trust": 0.9556,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 11,
+            "reward": 1.0,
+            "trust": 0.9357,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 12,
+            "reward": 1.0,
+            "trust": 0.9236,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 13,
+            "reward": 1.0,
+            "trust": 0.92,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 14,
+            "reward": 0.8161,
+            "trust": 0.9146,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 15,
+            "reward": 0.8431,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 16,
+            "reward": 0.9407,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 17,
+            "reward": 0.938,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 18,
+            "reward": 0.9354,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 19,
+            "reward": 0.9587,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 20,
+            "reward": 0.9572,
+            "trust": 0.9951,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          }
+        ]
+      },
+      {
+        "mean_reward": 0.9278046498761364,
+        "final_reward": 0.9458436247133871,
+        "mean_confidence": 0.9272992603451563,
+        "final_confidence": 0.9358443972362709,
+        "weeks": 20,
+        "rewards": [
+          0.8058633473600366,
+          0.7610834414584712,
+          0.8328734520872673,
+          0.9142838271729973,
+          0.9138333333333333,
+          1.0,
+          1.0,
+          0.8470772785268742,
+          0.8613000000000001,
+          0.9586333333333333,
+          0.9559666666666667,
+          1.0,
+          1.0,
+          0.9685688814475375,
+          0.9637261521371718,
+          0.9627831282704141,
+          0.9574054848355078,
+          0.956280053958436,
+          0.9505709922212955,
+          0.9458436247133871
+        ],
+        "confidence": [
+          0.7782779623185634,
+          0.8140943614096134,
+          0.9080803986479971,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.8913981715852155,
+          0.9237150000000001,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.9445749157054647,
+          0.9358443972362709
+        ],
+        "decisions": [
+          {
+            "week": 1,
+            "reward": 0.8059,
+            "trust": 0.7446,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 2,
+            "reward": 0.7611,
+            "trust": 0.8789,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "stimulus_package",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 3,
+            "reward": 0.8329,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "stimulus_package",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 4,
+            "reward": 0.9143,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 5,
+            "reward": 0.9138,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 6,
+            "reward": 1.0,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 7,
+            "reward": 1.0,
+            "trust": 0.9838,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 8,
+            "reward": 0.8471,
+            "trust": 0.9456,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 9,
+            "reward": 0.8613,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 10,
+            "reward": 0.9586,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 11,
+            "reward": 0.956,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 12,
+            "reward": 1.0,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 13,
+            "reward": 1.0,
+            "trust": 0.9934,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 14,
+            "reward": 0.9686,
+            "trust": 0.9904,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 15,
+            "reward": 0.9637,
+            "trust": 0.9747,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 16,
+            "reward": 0.9628,
+            "trust": 0.9731,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 17,
+            "reward": 0.9574,
+            "trust": 0.9564,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 18,
+            "reward": 0.9563,
+            "trust": 0.955,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 19,
+            "reward": 0.9506,
+            "trust": 0.9372,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 20,
+            "reward": 0.9458,
+            "trust": 0.9236,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          }
+        ]
+      },
+      {
+        "mean_reward": 0.942885387072737,
+        "final_reward": 0.9357967361034512,
+        "mean_confidence": 0.9205633858117862,
+        "final_confidence": 0.8945868676833104,
+        "weeks": 20,
+        "rewards": [
+          0.8016439382010757,
+          0.7557392782840342,
+          0.8278192780797279,
+          0.9148873891720838,
+          0.9138333333333333,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.9585658293947428,
+          0.9579421840631825,
+          0.9535358320393218,
+          0.950798994902726,
+          0.9451885925587938,
+          0.9419563553222648,
+          0.9357967361034512
+        ],
+        "confidence": [
+          0.7704097533225194,
+          0.8029086159979839,
+          0.8979642695959376,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.9377589037201574,
+          0.937046873691648,
+          0.9280993591495743,
+          0.9238370681282779,
+          0.9124208127405188,
+          0.9062351922057954,
+          0.8945868676833104
+        ],
+        "decisions": [
+          {
+            "week": 1,
+            "reward": 0.8016,
+            "trust": 0.7322,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 2,
+            "reward": 0.7557,
+            "trust": 0.8606,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "stimulus_package",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 3,
+            "reward": 0.8278,
+            "trust": 0.9837,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "stimulus_package",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 4,
+            "reward": 0.9149,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 5,
+            "reward": 0.9138,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 6,
+            "reward": 1.0,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 7,
+            "reward": 1.0,
+            "trust": 0.9963,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 8,
+            "reward": 1.0,
+            "trust": 0.9841,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 9,
+            "reward": 1.0,
+            "trust": 0.9729,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 10,
+            "reward": 1.0,
+            "trust": 0.9621,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 11,
+            "reward": 1.0,
+            "trust": 0.9477,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 12,
+            "reward": 1.0,
+            "trust": 0.9348,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 13,
+            "reward": 1.0,
+            "trust": 0.9217,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 14,
+            "reward": 0.9586,
+            "trust": 0.9123,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 15,
+            "reward": 0.9579,
+            "trust": 0.9115,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 16,
+            "reward": 0.9535,
+            "trust": 0.897,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 17,
+            "reward": 0.9508,
+            "trust": 0.8909,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 18,
+            "reward": 0.9452,
+            "trust": 0.8724,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 19,
+            "reward": 0.942,
+            "trust": 0.8626,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 20,
+            "reward": 0.9358,
+            "trust": 0.8442,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          }
+        ]
+      },
+      {
+        "mean_reward": 0.9287947768442611,
+        "final_reward": 0.9557464240970095,
+        "mean_confidence": 0.9281067368780775,
+        "final_confidence": 0.95,
+        "weeks": 20,
+        "rewards": [
+          0.8053787860574878,
+          0.7626975445419275,
+          0.8328220027220228,
+          0.9151220719431745,
+          0.9138333333333333,
+          1.0,
+          0.9280281902072341,
+          0.8395687009920804,
+          0.9508333333333333,
+          0.9481666666666667,
+          0.9455,
+          1.0,
+          1.0,
+          0.9667961517419499,
+          0.9656689543537993,
+          0.9644722298976294,
+          0.9619956902331926,
+          0.961254475733989,
+          0.9580109810303931,
+          0.9557464240970095
+        ],
+        "confidence": [
+          0.7772917160291675,
+          0.8164488546927238,
+          0.9080521014971126,
+          0.95,
+          0.95,
+          0.95,
+          0.9194762283087838,
+          0.8908658370337648,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95
+        ],
+        "decisions": [
+          {
+            "week": 1,
+            "reward": 0.8054,
+            "trust": 0.743,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 2,
+            "reward": 0.7627,
+            "trust": 0.8821,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "stimulus_package",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 3,
+            "reward": 0.8328,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "stimulus_package",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 4,
+            "reward": 0.9151,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 5,
+            "reward": 0.9138,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 6,
+            "reward": 1.0,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 7,
+            "reward": 0.928,
+            "trust": 0.909,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 8,
+            "reward": 0.8396,
+            "trust": 0.9536,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 9,
+            "reward": 0.9508,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 10,
+            "reward": 0.9482,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 11,
+            "reward": 0.9455,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 12,
+            "reward": 1.0,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 13,
+            "reward": 1.0,
+            "trust": 0.9844,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 14,
+            "reward": 0.9668,
+            "trust": 0.974,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 15,
+            "reward": 0.9657,
+            "trust": 0.9736,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 16,
+            "reward": 0.9645,
+            "trust": 0.97,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 17,
+            "reward": 0.962,
+            "trust": 0.9622,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 18,
+            "reward": 0.9613,
+            "trust": 0.9614,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 19,
+            "reward": 0.958,
+            "trust": 0.9508,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 20,
+            "reward": 0.9557,
+            "trust": 0.944,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          }
+        ]
+      },
+      {
+        "mean_reward": 0.9458021027949147,
+        "final_reward": 0.9500734069749323,
+        "mean_confidence": 0.9264849083577543,
+        "final_confidence": 0.9233409462713962,
+        "weeks": 20,
+        "rewards": [
+          0.8042421363069175,
+          0.7564632845375063,
+          0.8326667395482182,
+          0.9150403879435441,
+          0.9138333333333333,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.9618220215926194,
+          0.9617135999559575,
+          0.958202296634738,
+          0.9559066793920493,
+          0.9540248889839177,
+          0.9520532806945624,
+          0.9500734069749323
+        ],
+        "confidence": [
+          0.7748997545130578,
+          0.8047635209751212,
+          0.9077129771203483,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.9442485706619688,
+          0.944162821309303,
+          0.9376403421959474,
+          0.9344268259244267,
+          0.9312075206966813,
+          0.9272948874868355,
+          0.9233409462713962
+        ],
+        "decisions": [
+          {
+            "week": 1,
+            "reward": 0.8042,
+            "trust": 0.739,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 2,
+            "reward": 0.7565,
+            "trust": 0.8638,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "stimulus_package",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 3,
+            "reward": 0.8327,
+            "trust": 0.9994,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "stimulus_package",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 4,
+            "reward": 0.915,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 5,
+            "reward": 0.9138,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 6,
+            "reward": 1.0,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 7,
+            "reward": 1.0,
+            "trust": 0.9837,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 8,
+            "reward": 1.0,
+            "trust": 0.9738,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 9,
+            "reward": 1.0,
+            "trust": 0.9674,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 10,
+            "reward": 1.0,
+            "trust": 0.9674,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 11,
+            "reward": 1.0,
+            "trust": 0.952,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 12,
+            "reward": 1.0,
+            "trust": 0.9487,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 13,
+            "reward": 1.0,
+            "trust": 0.94,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 14,
+            "reward": 0.9618,
+            "trust": 0.9228,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 15,
+            "reward": 0.9617,
+            "trust": 0.9227,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 16,
+            "reward": 0.9582,
+            "trust": 0.9125,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 17,
+            "reward": 0.9559,
+            "trust": 0.9082,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 18,
+            "reward": 0.954,
+            "trust": 0.9033,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 19,
+            "reward": 0.9521,
+            "trust": 0.897,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 20,
+            "reward": 0.9501,
+            "trust": 0.8907,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          }
+        ]
+      },
+      {
+        "mean_reward": 0.9433311566657757,
+        "final_reward": 0.9380544247145484,
+        "mean_confidence": 0.9220663041407221,
+        "final_confidence": 0.9014046185379193,
+        "weeks": 20,
+        "rewards": [
+          0.8066799180138583,
+          0.763343994884075,
+          0.8322807310126955,
+          0.9143456909858765,
+          0.9138333333333333,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.9574129839303356,
+          0.9552007549962458,
+          0.9515590793612361,
+          0.9489541716379386,
+          0.9427293719265808,
+          0.9422286785187911,
+          0.9380544247145484
+        ],
+        "confidence": [
+          0.7805719991205373,
+          0.8193339740392356,
+          0.9077544020569825,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.9355082508294672,
+          0.931987677170556,
+          0.925882598738599,
+          0.9210580796523063,
+          0.9090876686312801,
+          0.9087368140375571,
+          0.9014046185379193
+        ],
+        "decisions": [
+          {
+            "week": 1,
+            "reward": 0.8067,
+            "trust": 0.7487,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 2,
+            "reward": 0.7633,
+            "trust": 0.8878,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "stimulus_package",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 3,
+            "reward": 0.8323,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "stimulus_package",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 4,
+            "reward": 0.9143,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 5,
+            "reward": 0.9138,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 6,
+            "reward": 1.0,
+            "trust": 1.0,
+            "actions": {
+              "mayor": "emergency_budget_release",
+              "health_minister": "increase_hospital_staff",
+              "finance_officer": "issue_bonds",
+              "police_chief": "community_policing",
+              "infrastructure_head": "emergency_repairs",
+              "media_spokesperson": "press_conference"
+            }
+          },
+          {
+            "week": 7,
+            "reward": 1.0,
+            "trust": 0.9949,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 8,
+            "reward": 1.0,
+            "trust": 0.9756,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 9,
+            "reward": 1.0,
+            "trust": 0.9739,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 10,
+            "reward": 1.0,
+            "trust": 0.9606,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 11,
+            "reward": 1.0,
+            "trust": 0.9463,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 12,
+            "reward": 1.0,
+            "trust": 0.9292,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 13,
+            "reward": 1.0,
+            "trust": 0.921,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 14,
+            "reward": 0.9574,
+            "trust": 0.9087,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 15,
+            "reward": 0.9552,
+            "trust": 0.9036,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 16,
+            "reward": 0.9516,
+            "trust": 0.8945,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 17,
+            "reward": 0.949,
+            "trust": 0.887,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 18,
+            "reward": 0.9427,
+            "trust": 0.868,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 19,
+            "reward": 0.9422,
+            "trust": 0.8678,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          },
+          {
+            "week": 20,
+            "reward": 0.9381,
+            "trust": 0.8566,
+            "actions": {
+              "mayor": "hold",
+              "health_minister": "hold",
+              "finance_officer": "hold",
+              "police_chief": "hold",
+              "infrastructure_head": "hold",
+              "media_spokesperson": "hold"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

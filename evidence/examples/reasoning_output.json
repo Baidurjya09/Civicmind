@@ -1,0 +1,53 @@
+{
+  "scenario": "Major Flood Crisis",
+  "state": {
+    "flood_severity": 0.9,
+    "budget_remaining": 0.2,
+    "population_risk": 0.8,
+    "trust_score": 0.35
+  },
+  "agent_decisions": {
+    "mayor": {
+      "action": "emergency_budget_release",
+      "confidence": 0.92,
+      "reasoning": "Flood and population risk exceed critical thresholds (0.9, 0.8). Despite low budget (0.2), emergency funds must be released to prevent catastrophic loss of life. Trust is already low (0.35), inaction would be worse."
+    },
+    "health_minister": {
+      "action": "hold",
+      "confidence": 0.78,
+      "reasoning": "No disease outbreak detected. Resources should be conserved for potential secondary health crisis following flood. Hospital capacity adequate for current needs."
+    },
+    "finance_officer": {
+      "action": "hold",
+      "confidence": 0.81,
+      "reasoning": "Budget already critically low (0.2). Mayor's emergency release will strain finances. Avoid compounding budget crisis with additional spending. Monitor for economic recovery opportunities."
+    },
+    "media_spokesperson": {
+      "action": "social_media_campaign",
+      "confidence": 0.89,
+      "reasoning": "Trust score critically low (0.35). Citizens need reassurance that government is responding to crisis. Social media campaign can quickly reach affected population and demonstrate action."
+    }
+  },
+  "final_decision": {
+    "primary_action": "EMERGENCY_RESPONSE",
+    "actions_taken": [
+      "Emergency budget release (Mayor)",
+      "Social media campaign (Media)"
+    ],
+    "actions_deferred": [
+      "Health interventions (no outbreak)",
+      "Additional spending (budget constraint)"
+    ],
+    "expected_outcome": {
+      "survival_rate": "Improved (+0.15)",
+      "trust_score": "Slight improvement (+0.08)",
+      "budget_remaining": "Decreased (-0.10)"
+    },
+    "risk_assessment": "HIGH - Multiple crises converging, but coordinated response should prevent worst outcomes"
+  },
+  "learning_evidence": {
+    "before_training": "Random actions, no coordination",
+    "after_training": "Coordinated response, context-aware decisions",
+    "improvement": "+18.4% reward, +107% trust"
+  }
+}

@@ -10,6 +10,7 @@ from typing import Dict, List, Any, Tuple
 from .city_state import CityState
 from .crisis_engine import CrisisEngine
 from .citizen_engine import CitizenEngine
+from .reward_hardening import calculate_hardened_reward
 
 
 @dataclass
@@ -117,8 +118,8 @@ class CivicMindEnv:
         # 5. Clamp values
         self.city.clamp_values()
         
-        # 6. Calculate reward
-        reward = self._calculate_reward()
+        # 6. Calculate reward (using hardened reward function)
+        reward = calculate_hardened_reward(self)
         
         # 7. Check termination
         self.done = (
