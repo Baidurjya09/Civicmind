@@ -1,0 +1,94 @@
+{
+  "study_type": "ablation",
+  "date": "2026-04-25",
+  "baseline": {
+    "agent_removed": "none (full system)",
+    "episodes": 5,
+    "mean_reward": 0.9328942973160391,
+    "mean_trust": 0.9480060486959688,
+    "mean_survival": 0.973344,
+    "weeks_survived": 15.0
+  },
+  "ablations": [
+    {
+      "agent_removed": "mayor",
+      "episodes": 5,
+      "mean_reward": 0.9400762449427396,
+      "mean_trust": 0.9322421704145993,
+      "mean_survival": 0.973344,
+      "weeks_survived": 15.0,
+      "reward_delta": 0.007181947626700436,
+      "reward_pct": 0.7698565257996628,
+      "trust_delta": -0.015763878281369492,
+      "survival_delta": 0.0
+    },
+    {
+      "agent_removed": "health_minister",
+      "episodes": 5,
+      "mean_reward": 0.939472075093817,
+      "mean_trust": 0.9480060486959688,
+      "mean_survival": 0.973344,
+      "weeks_survived": 15.0,
+      "reward_delta": 0.0065777777777779045,
+      "reward_pct": 0.7050935777721378,
+      "trust_delta": 0.0,
+      "survival_delta": 0.0
+    },
+    {
+      "agent_removed": "finance_officer",
+      "episodes": 5,
+      "mean_reward": 0.9218250748731946,
+      "mean_trust": 0.9441753072198205,
+      "mean_survival": 0.973344,
+      "weeks_survived": 15.0,
+      "reward_delta": -0.011069222442844473,
+      "reward_pct": -1.1865462651761203,
+      "trust_delta": -0.0038307414761483694,
+      "survival_delta": 0.0
+    },
+    {
+      "agent_removed": "police_chief",
+      "episodes": 5,
+      "mean_reward": 0.920771529724604,
+      "mean_trust": 0.9441753072198205,
+      "mean_survival": 0.973344,
+      "weeks_survived": 15.0,
+      "reward_delta": -0.012122767591435157,
+      "reward_pct": -1.2994792257078505,
+      "trust_delta": -0.0038307414761483694,
+      "survival_delta": 0.0
+    },
+    {
+      "agent_removed": "infrastructure_head",
+      "episodes": 5,
+      "mean_reward": 0.9351698528715946,
+      "mean_trust": 0.9480060486959688,
+      "mean_survival": 0.973344,
+      "weeks_survived": 15.0,
+      "reward_delta": 0.002275555555555475,
+      "reward_pct": 0.2439242647427803,
+      "trust_delta": 0.0,
+      "survival_delta": 0.0
+    },
+    {
+      "agent_removed": "media_spokesperson",
+      "episodes": 5,
+      "mean_reward": 0.9258984671649617,
+      "mean_trust": 0.9389088370812659,
+      "mean_survival": 0.973344,
+      "weeks_survived": 15.0,
+      "reward_delta": -0.006995830151077409,
+      "reward_pct": -0.7499059830470175,
+      "trust_delta": -0.009097211614702894,
+      "survival_delta": 0.0
+    }
+  ],
+  "analysis": {
+    "worst_agent_to_remove": "police_chief",
+    "worst_degradation": -0.012122767591435157,
+    "worst_degradation_pct": -1.2994792257078505,
+    "average_degradation": -0.002358756537553871,
+    "average_degradation_pct": -0.2528428509360679,
+    "all_agents_contribute": false
+  }
+}

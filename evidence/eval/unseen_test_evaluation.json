@@ -1,0 +1,86 @@
+{
+  "evaluation_type": "unseen_test_set",
+  "date": "2026-04-25",
+  "train_set": {
+    "scenarios": 3,
+    "results": [
+      {
+        "scenario_name": "Disease Outbreak (Train)",
+        "mean_reward": 0.7554967001534507,
+        "final_reward": 0.7568654407999793,
+        "mean_trust": 0.6462818934650769,
+        "final_trust": 0.5653568674373413,
+        "mean_survival": 0.9467200000000001,
+        "weeks_survived": 15
+      },
+      {
+        "scenario_name": "Economic Crisis (Train)",
+        "mean_reward": 0.7922258563663788,
+        "final_reward": 0.7790831648452421,
+        "mean_trust": 0.6676602348160302,
+        "final_trust": 0.594900051426052,
+        "mean_survival": 0.98,
+        "weeks_survived": 15
+      },
+      {
+        "scenario_name": "Infrastructure Failure (Train)",
+        "mean_reward": 0.8499432468040014,
+        "final_reward": 0.7991253390782672,
+        "mean_trust": 0.7069827444747753,
+        "final_trust": 0.653039034332116,
+        "mean_survival": 0.98,
+        "weeks_survived": 15
+      }
+    ],
+    "average_reward": 0.799221934441277,
+    "average_trust": 0.6736416242519608
+  },
+  "test_set": {
+    "scenarios": 4,
+    "results": [
+      {
+        "scenario_name": "Cyber Attack (Test - UNSEEN)",
+        "mean_reward": 0.8019227791313025,
+        "final_reward": 0.7711492965897564,
+        "mean_trust": 0.6438764765823163,
+        "final_trust": 0.5601240383879121,
+        "mean_survival": 0.98,
+        "weeks_survived": 15
+      },
+      {
+        "scenario_name": "Natural Disaster (Test - UNSEEN)",
+        "mean_reward": 0.7760439214427841,
+        "final_reward": 0.7861236640988649,
+        "mean_trust": 0.6748220053674133,
+        "final_trust": 0.6135566832570405,
+        "mean_survival": 0.98,
+        "weeks_survived": 15
+      },
+      {
+        "scenario_name": "Social Unrest (Test - UNSEEN)",
+        "mean_reward": 0.7963366290517029,
+        "final_reward": 0.7847145197075385,
+        "mean_trust": 0.6735512025834293,
+        "final_trust": 0.6027290812148782,
+        "mean_survival": 0.98,
+        "weeks_survived": 15
+      },
+      {
+        "scenario_name": "Pandemic (Test - UNSEEN)",
+        "mean_reward": 0.7516415120092462,
+        "final_reward": 0.7748720060943227,
+        "mean_trust": 0.6495273453531337,
+        "final_trust": 0.5691406350244127,
+        "mean_survival": 0.98,
+        "weeks_survived": 15
+      }
+    ],
+    "average_reward": 0.781486210408759,
+    "average_trust": 0.6604442574715732
+  },
+  "generalization": {
+    "gap": 0.017735724032517997,
+    "gap_percentage": 2.2191237837981452,
+    "retention_percentage": 97.78087621620185
+  }
+}

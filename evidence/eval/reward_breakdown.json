@@ -1,0 +1,329 @@
+{
+  "evaluation_type": "reward_breakdown",
+  "date": "2026-04-25",
+  "episode": {
+    "seed": 42,
+    "total_weeks": 10,
+    "steps": [
+      {
+        "week": 1,
+        "total_reward": 0.8037735618044373,
+        "breakdown": {
+          "survival": 0.392,
+          "trust": 0.22116343920925272,
+          "gdp": 0.13333333333333333,
+          "security": 0.08477678926185117,
+          "rebel_penalty": 0.0,
+          "crisis_penalty": -0.027500000000000004,
+          "total": 0.7037735618044373
+        },
+        "city_state": {
+          "trust": 0.7372114640308424,
+          "survival": 0.98,
+          "gdp": 1.0,
+          "budget": 1000000.0,
+          "crime": 0.15223210738148824,
+          "disease": 0.02
+        },
+        "actions": {
+          "mayor": "hold",
+          "health_minister": "hold",
+          "finance_officer": "hold",
+          "police_chief": "hold",
+          "infrastructure_head": "hold",
+          "media_spokesperson": "hold"
+        }
+      },
+      {
+        "week": 2,
+        "total_reward": 0.7560573538454368,
+        "breakdown": {
+          "survival": 0.392,
+          "trust": 0.25781036180302364,
+          "gdp": 0.14400000000000002,
+          "security": 0.08974699204241311,
+          "rebel_penalty": 0.0,
+          "crisis_penalty": -0.027500000000000004,
+          "total": 0.8560573538454368
+        },
+        "city_state": {
+          "trust": 0.8593678726767455,
+          "survival": 0.98,
+          "gdp": 1.08,
+          "budget": 580000.0,
+          "crime": 0.10253007957586893,
+          "disease": 0.01
+        },
+        "actions": {
+          "mayor": "emergency_budget_release",
+          "health_minister": "increase_hospital_staff",
+          "finance_officer": "stimulus_package",
+          "police_chief": "community_policing",
+          "infrastructure_head": "emergency_repairs",
+          "media_spokesperson": "press_conference"
+        }
+      },
+      {
+        "week": 3,
+        "total_reward": 0.8330198632133972,
+        "breakdown": {
+          "survival": 0.392,
+          "trust": 0.2996511459849205,
+          "gdp": 0.1546666666666667,
+          "security": 0.0942020505618099,
+          "rebel_penalty": 0.0,
+          "crisis_penalty": -0.027500000000000004,
+          "total": 0.9130198632133971
+        },
+        "city_state": {
+          "trust": 0.9988371532830683,
+          "survival": 0.98,
+          "gdp": 1.1600000000000001,
+          "budget": 160000.0,
+          "crime": 0.057979494381901094,
+          "disease": 0.0
+        },
+        "actions": {
+          "mayor": "emergency_budget_release",
+          "health_minister": "increase_hospital_staff",
+          "finance_officer": "stimulus_package",
+          "police_chief": "community_policing",
+          "infrastructure_head": "emergency_repairs",
+          "media_spokesperson": "press_conference"
+        }
+      },
+      {
+        "week": 4,
+        "total_reward": 0.8723639111668217,
+        "breakdown": {
+          "survival": 0.37536,
+          "trust": 0.3,
+          "gdp": 0.15200000000000002,
+          "security": 0.09850391116682167,
+          "rebel_penalty": 0.0,
+          "crisis_penalty": -0.053500000000000006,
+          "total": 0.8723639111668217
+        },
+        "city_state": {
+          "trust": 1.0,
+          "survival": 0.9384,
+          "gdp": 1.1400000000000001,
+          "budget": 140000.0,
+          "crime": 0.01496088833178336,
+          "disease": 0.052000000000000005
+        },
+        "actions": {
+          "mayor": "emergency_budget_release",
+          "health_minister": "increase_hospital_staff",
+          "finance_officer": "issue_bonds",
+          "police_chief": "community_policing",
+          "infrastructure_head": "emergency_repairs",
+          "media_spokesperson": "press_conference"
+        }
+      },
+      {
+        "week": 5,
+        "total_reward": 0.8711933333333333,
+        "breakdown": {
+          "survival": 0.37536,
+          "trust": 0.3,
+          "gdp": 0.14933333333333335,
+          "security": 0.1,
+          "rebel_penalty": 0.0,
+          "crisis_penalty": -0.053500000000000006,
+          "total": 0.8711933333333333
+        },
+        "city_state": {
+          "trust": 1.0,
+          "survival": 0.9384,
+          "gdp": 1.12,
+          "budget": 190000.0,
+          "crime": 0.0,
+          "disease": 0.042
+        },
+        "actions": {
+          "mayor": "emergency_budget_release",
+          "health_minister": "increase_hospital_staff",
+          "finance_officer": "issue_bonds",
+          "police_chief": "community_policing",
+          "infrastructure_head": "emergency_repairs",
+          "media_spokesperson": "press_conference"
+        }
+      },
+      {
+        "week": 6,
+        "total_reward": 0.9460266666666667,
+        "breakdown": {
+          "survival": 0.37536,
+          "trust": 0.3,
+          "gdp": 0.1466666666666667,
+          "security": 0.1,
+          "rebel_penalty": 0.0,
+          "crisis_penalty": -0.026000000000000002,
+          "total": 0.9460266666666667
+        },
+        "city_state": {
+          "trust": 1.0,
+          "survival": 0.9384,
+          "gdp": 1.1,
+          "budget": 170000.0,
+          "crime": 0.0,
+          "disease": 0.042
+        },
+        "actions": {
+          "mayor": "emergency_budget_release",
+          "health_minister": "increase_hospital_staff",
+          "finance_officer": "issue_bonds",
+          "police_chief": "community_policing",
+          "infrastructure_head": "emergency_repairs",
+          "media_spokesperson": "press_conference"
+        }
+      },
+      {
+        "week": 7,
+        "total_reward": 0.94336,
+        "breakdown": {
+          "survival": 0.37536,
+          "trust": 0.3,
+          "gdp": 0.14400000000000002,
+          "security": 0.1,
+          "rebel_penalty": 0.0,
+          "crisis_penalty": -0.026000000000000002,
+          "total": 0.94336
+        },
+        "city_state": {
+          "trust": 1.0,
+          "survival": 0.9384,
+          "gdp": 1.08,
+          "budget": 150000.0,
+          "crime": 0.0,
+          "disease": 0.042
+        },
+        "actions": {
+          "mayor": "emergency_budget_release",
+          "health_minister": "increase_hospital_staff",
+          "finance_officer": "issue_bonds",
+          "police_chief": "community_policing",
+          "infrastructure_head": "emergency_repairs",
+          "media_spokesperson": "press_conference"
+        }
+      },
+      {
+        "week": 8,
+        "total_reward": 0.9666933333333333,
+        "breakdown": {
+          "survival": 0.37536,
+          "trust": 0.3,
+          "gdp": 0.14133333333333334,
+          "security": 0.1,
+          "rebel_penalty": 0.0,
+          "crisis_penalty": -0.0,
+          "total": 0.9666933333333333
+        },
+        "city_state": {
+          "trust": 1.0,
+          "survival": 0.9384,
+          "gdp": 1.06,
+          "budget": 130000.0,
+          "crime": 0.0,
+          "disease": 0.042
+        },
+        "actions": {
+          "mayor": "emergency_budget_release",
+          "health_minister": "increase_hospital_staff",
+          "finance_officer": "issue_bonds",
+          "police_chief": "community_policing",
+          "infrastructure_head": "emergency_repairs",
+          "media_spokesperson": "press_conference"
+        }
+      },
+      {
+        "week": 9,
+        "total_reward": 0.9626697196369755,
+        "breakdown": {
+          "survival": 0.37536,
+          "trust": 0.2961858933344136,
+          "gdp": 0.14133333333333334,
+          "security": 0.09979049296922853,
+          "rebel_penalty": 0.0,
+          "crisis_penalty": -0.0,
+          "total": 0.9626697196369755
+        },
+        "city_state": {
+          "trust": 0.987286311114712,
+          "survival": 0.9384,
+          "gdp": 1.06,
+          "budget": 130000.0,
+          "crime": 0.002095070307714877,
+          "disease": 0.042
+        },
+        "actions": {
+          "mayor": "hold",
+          "health_minister": "hold",
+          "finance_officer": "hold",
+          "police_chief": "hold",
+          "infrastructure_head": "hold",
+          "media_spokesperson": "hold"
+        }
+      },
+      {
+        "week": 10,
+        "total_reward": 0.9580523805275455,
+        "breakdown": {
+          "survival": 0.37536,
+          "trust": 0.292297681022934,
+          "gdp": 0.14133333333333334,
+          "security": 0.09906136617127817,
+          "rebel_penalty": 0.0,
+          "crisis_penalty": -0.0,
+          "total": 0.9580523805275455
+        },
+        "city_state": {
+          "trust": 0.9743256034097801,
+          "survival": 0.9384,
+          "gdp": 1.06,
+          "budget": 130000.0,
+          "crime": 0.009386338287218368,
+          "disease": 0.042
+        },
+        "actions": {
+          "mayor": "hold",
+          "health_minister": "hold",
+          "finance_officer": "hold",
+          "police_chief": "hold",
+          "infrastructure_head": "hold",
+          "media_spokesperson": "hold"
+        }
+      }
+    ]
+  },
+  "analysis": {
+    "component_averages": {
+      "survival": 0.38035200000000013,
+      "trust": 0.28671085213545444,
+      "gdp": 0.14479999999999998,
+      "security": 0.09660816021734024,
+      "rebel_penalty": 0.0,
+      "crisis_penalty": -0.024149999999999998
+    },
+    "component_percentages": {
+      "survival": 40.78312572439869,
+      "trust": 30.742482566648043,
+      "gdp": 15.52613527704055,
+      "security": 10.358780140886962,
+      "rebel_penalty": 0.0,
+      "crisis_penalty": 2.589476291025755
+    },
+    "dominant_component": "survival",
+    "dominant_percentage": 40.78312572439869,
+    "positive_components": [
+      "survival",
+      "trust",
+      "gdp",
+      "security"
+    ],
+    "negative_components": [
+      "crisis_penalty"
+    ]
+  }
+}
