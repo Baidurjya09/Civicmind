@@ -8,9 +8,9 @@ A multi-agent reinforcement learning environment where 6 AI agents govern a city
 
 ## 🚀 Quick Links
 
-- **[🎮 Live Demo on HuggingFace Space](https://huggingface.co/spaces/baidujyabastavhazarika/civicmind)**
-- **[📓 Training Notebook (Colab)](https://colab.research.google.com/github/baidujyabastavhazarika/civicmind/blob/main/CivicMind_Training.ipynb)**
-- **[📝 Blog Post](https://huggingface.co/spaces/baidujyabastavhazarika/civicmind/blob/main/BLOG_POST_FINAL.md)**
+- **[🎮 Live Demo on HuggingFace Space](https://huggingface.co/spaces/Baidurjya09/civicmind)**
+- **[📓 Training Notebook (Colab)](https://colab.research.google.com/github/Baidurjya09/Civicmind/blob/main/CivicMind_Training.ipynb)**
+- **[📝 Blog Post](https://huggingface.co/spaces/Baidurjya09/civicmind/blob/main/BLOG_POST_FINAL.md)**
 
 ---
 
