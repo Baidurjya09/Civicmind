@@ -1,3 +1,13 @@
+---
+title: CivicMind - Multi-Agent Governance System
+emoji: 🏛️
+colorFrom: blue
+colorTo: purple
+sdk: docker
+app_file: app.py
+pinned: false
+---
+
 # 🏛️ CivicMind - Multi-Agent Governance System
 
 **OpenEnv India Hackathon 2026**
