@@ -79,7 +79,8 @@ Also the rebel agent is surprisingly hard to beat. Turns out restoring public tr
 ---
 
 **Links:**
-- Code: [GitHub](https://github.com/YOUR_USERNAME/civicmind)
-- Demo: [Try it yourself](#)
+- Code: [GitHub](https://github.com/Baidurjya09/Civicmind)
+- Demo: [HuggingFace Space](https://huggingface.co/spaces/Baidurjya09/civicmind)
+- Training: [Colab Notebook](https://colab.research.google.com/github/Baidurjya09/Civicmind/blob/main/CivicMind_Training.ipynb)
 
-Built for Meta × Hugging Face OpenEnv Hackathon 2025.
+Built for Meta × Hugging Face OpenEnv Hackathon 2026.

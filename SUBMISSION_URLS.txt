@@ -1,0 +1,69 @@
+🚀 CIVICMIND - HACKATHON SUBMISSION URLS
+==========================================
+
+📧 Email: baidujyabastavhazarika@gmail.com
+
+📝 FORM FIELDS:
+==========================================
+
+1️⃣ Hugging Face Space URL for your Env:
+https://huggingface.co/spaces/Baidurjya09/civicmind
+
+2️⃣ Training Run Notebook URL:
+https://colab.research.google.com/github/Baidurjya09/Civicmind/blob/main/CivicMind_Training.ipynb
+
+3️⃣ YouTube Demo Video or Blog Post URL?
+Select: ● Blog Post
+
+4️⃣ Share the URL for above selected option:
+https://huggingface.co/spaces/Baidurjya09/civicmind/blob/main/BLOG_POST_FINAL.md
+
+==========================================
+
+✅ CHECKLIST BEFORE SUBMITTING:
+==========================================
+[ ] HF Space deployed and working
+[ ] Tested HF Space URL in incognito browser
+[ ] Tested Colab URL in incognito browser
+[ ] Tested Blog URL in incognito browser
+[ ] All 3 URLs are publicly accessible
+[ ] Email is correct: baidujyabastavhazarika@gmail.com
+[ ] Selected "Blog Post" option (not YouTube)
+
+==========================================
+
+⚠️ CRITICAL REQUIREMENTS MET:
+==========================================
+✅ OpenEnv framework used (civic_env.py extends gymnasium.Env)
+✅ Training script as Colab notebook (CivicMind_Training.ipynb)
+✅ Evidence of training (loss curves, reward plots in train_result_elite/)
+✅ Blog post on HuggingFace (BLOG_POST_FINAL.md)
+✅ HF Space deployment ready (app.py + Dockerfile.space)
+✅ README with motivation, explanation, results
+✅ README links to HF Space, Colab, Blog
+✅ No large video files included
+
+==========================================
+
+🚨 URGENT - DEPLOY HF SPACE NOW:
+==========================================
+1. Go to: https://huggingface.co/new-space
+2. Name: civicmind
+3. Owner: Baidurjya09
+4. SDK: Docker
+5. Upload files:
+   - app.py
+   - Dockerfile.space (rename to Dockerfile)
+   - requirements_hf.txt
+   - openenv.yaml
+   - setup.py
+   - BLOG_POST_FINAL.md
+   - Folders: environment/, agents/, rewards/, core/, apis/
+
+6. Wait for build (5-10 min)
+7. Test in incognito
+8. Submit form!
+
+==========================================
+TIME: Before 4:50 PM - HURRY!
+==========================================
