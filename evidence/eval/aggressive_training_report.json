@@ -1,0 +1,92 @@
+{
+  "training_config": {
+    "algorithm": "Tabular Q-Learning",
+    "episodes_per_seed": 3000,
+    "seeds": [
+      42,
+      123,
+      456
+    ],
+    "epsilon_decay": "1.0 \u2192 0.05",
+    "learning_rate": 0.1,
+    "gamma": 0.95
+  },
+  "convergence_metrics": {
+    "mean_final_reward": 19.627732597533182,
+    "std_final_reward": 0.0,
+    "min_final_reward": 19.627732597533182,
+    "max_final_reward": 19.627732597533182,
+    "normalized_mean": 0.9813866298766591
+  },
+  "state_space": {
+    "states_learned": [
+      516,
+      516,
+      516
+    ],
+    "mean_states": 516.0
+  },
+  "unseen_performance": {
+    "mean": 19.544502593419555,
+    "std": 0.40020816102972445,
+    "min": 18.297424114177144,
+    "max": 19.970708977159628,
+    "normalized_mean": 0.9772251296709777
+  },
+  "per_agent_learning": {
+    "mayor": {
+      "unique_actions": 4,
+      "action_distribution": {
+        "emergency_budget_release": 143,
+        "invest_in_welfare": 119,
+        "reduce_tax": 113,
+        "hold": 141
+      },
+      "states_with_policy": 516
+    },
+    "health_minister": {
+      "unique_actions": 3,
+      "action_distribution": {
+        "mass_vaccination": 144,
+        "increase_hospital_staff": 179,
+        "hold": 193
+      },
+      "states_with_policy": 516
+    },
+    "finance_officer": {
+      "unique_actions": 3,
+      "action_distribution": {
+        "hold": 229,
+        "stimulus_package": 180,
+        "issue_bonds": 107
+      },
+      "states_with_policy": 516
+    },
+    "police_chief": {
+      "unique_actions": 2,
+      "action_distribution": {
+        "hold": 300,
+        "community_policing": 216
+      },
+      "states_with_policy": 516
+    },
+    "infrastructure_head": {
+      "unique_actions": 2,
+      "action_distribution": {
+        "emergency_repairs": 267,
+        "hold": 249
+      },
+      "states_with_policy": 516
+    },
+    "media_spokesperson": {
+      "unique_actions": 3,
+      "action_distribution": {
+        "social_media_campaign": 155,
+        "hold": 192,
+        "press_conference": 169
+      },
+      "states_with_policy": 516
+    }
+  },
+  "training_time_total": 6.642659425735474
+}

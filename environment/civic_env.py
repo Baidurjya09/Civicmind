@@ -10,7 +10,8 @@ from typing import Dict, List, Any, Tuple
 from .city_state import CityState
 from .crisis_engine import CrisisEngine
 from .citizen_engine import CitizenEngine
-from .reward_hardening import calculate_hardened_reward
+from .improvement_reward import calculate_improvement_reward
+from .action_executor import ActionExecutor
 
 
 @dataclass
@@ -62,6 +63,9 @@ class CivicMindEnv:
             seed=self.config.seed + 1
         )
         
+        # Action executor (connects LLM outputs to state changes)
+        self.action_executor = ActionExecutor()
+        
         # Episode state
         self.current_week = 0
         self.done = False
@@ -79,6 +83,7 @@ class CivicMindEnv:
         self.city.num_citizens = self.config.num_citizens
         self.crisis_engine.reset(self.config.difficulty)
         self.citizen_engine.reset()
+        self.action_executor.reset()
         
         self.current_week = 0
         self.done = False
@@ -118,8 +123,8 @@ class CivicMindEnv:
         # 5. Clamp values
         self.city.clamp_values()
         
-        # 6. Calculate reward (using hardened reward function)
-        reward = calculate_hardened_reward(self)
+        # 6. Calculate reward (using improvement-based reward function)
+        reward = calculate_improvement_reward(self)
         
         # 7. Check termination
         self.done = (
@@ -219,48 +224,9 @@ class CivicMindEnv:
         return obs
     
     def _apply_actions(self, actions: Dict[str, Dict]) -> Dict:
-        """Apply agent actions to city state"""
-        results = {}
-        
-        for agent_id, action in actions.items():
-            decision = action.get("policy_decision", "hold")
-            result = {"agent": agent_id, "decision": decision, "success": True}
-            
-            # Execute decision
-            if decision == "hold":
-                pass
-            elif decision == "increase_tax":
-                result.update(self.city.apply_tax_increase())
-            elif decision == "reduce_tax":
-                result.update(self.city.apply_tax_decrease())
-            elif decision == "invest_in_welfare":
-                result.update(self.city.invest_in_welfare())
-            elif decision == "increase_hospital_staff":
-                result.update(self.city.increase_hospital_capacity())
-            elif decision == "mass_vaccination":
-                self.city.disease_prevalence -= 0.08
-                result["disease_change"] = -0.08
-            elif decision == "community_policing":
-                result.update(self.city.deploy_police("community"))
-            elif decision == "deploy_riot_control":
-                result.update(self.city.deploy_police("riot_control"))
-            elif decision == "emergency_repairs":
-                result.update(self.city.repair_infrastructure())
-            elif decision == "press_conference":
-                result.update(self.city.launch_media_campaign("trust"))
-            elif decision == "social_media_campaign":
-                result.update(self.city.launch_media_campaign("trust"))
-            elif decision == "emergency_budget_release":
-                result.update(self.city.emergency_budget_release())
-            elif decision == "issue_bonds":
-                result.update(self.city.issue_bonds())
-            elif decision == "stimulus_package":
-                result.update(self.city.stimulus_package())
-            elif decision == "anti_corruption_drive":
-                result.update(self.city.anti_corruption_drive())
-            
-            results[agent_id] = result
-        
+        """Apply agent actions to city state using ActionExecutor"""
+        # Use the action executor to properly connect LLM outputs to state changes
+        results = self.action_executor.execute_all(actions, self.city)
         return results
     
     def _apply_crisis_effects(self, crisis):

@@ -59,7 +59,7 @@ print()
 
 # Load dataset
 print("Loading dataset...")
-dataset_path = "training/civicmind_dataset.jsonl"
+dataset_path = "training/llm_training_data.jsonl"
 samples = []
 with open(dataset_path) as f:
     for line in f:

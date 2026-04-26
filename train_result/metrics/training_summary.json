@@ -1,0 +1,65 @@
+{
+  "sft_training": {
+    "initial_loss": 2.8804510116577147,
+    "final_loss": 0.059887266159057616,
+    "min_loss": 0.05641696453094482,
+    "loss_reduction_percent": 97.92090662480693,
+    "total_steps": 3910,
+    "epochs": 3,
+    "initial_lr": 0.00019953869810353665,
+    "final_lr": 3.075345976422348e-07,
+    "mean_grad_norm": 0.12012729109705561,
+    "max_grad_norm": 0.7958796620368958,
+    "model": "Qwen2.5-0.5B-Instruct + LoRA",
+    "trainable_params_percent": 0.26,
+    "training_time": "55 minutes"
+  },
+  "grpo_training": {
+    "initial_loss": 2.934473693370819,
+    "final_loss": 1.603476881980896,
+    "loss_reduction_percent": 45.35725825032059,
+    "initial_reward": 0.6,
+    "final_reward": 0.6,
+    "mean_reward": 0.60675,
+    "total_steps": 50,
+    "method": "Group Relative Policy Optimization",
+    "training_time": "~2 minutes (50 samples)"
+  },
+  "agent_diversity": {
+    "total_samples": 10428,
+    "hold_percent": 12.55,
+    "active_percent": 87.45,
+    "per_agent": {
+      "mayor": {
+        "total": 1738,
+        "hold_percent": 9.72,
+        "top_action": "emergency_budget_release"
+      },
+      "health_minister": {
+        "total": 1738,
+        "hold_percent": 14.5,
+        "top_action": "mass_vaccination"
+      },
+      "finance_officer": {
+        "total": 1738,
+        "hold_percent": 11.22,
+        "top_action": "stimulus_package"
+      },
+      "police_chief": {
+        "total": 1738,
+        "hold_percent": 10.18,
+        "top_action": "community_policing"
+      },
+      "infrastructure_head": {
+        "total": 1738,
+        "hold_percent": 14.96,
+        "top_action": "emergency_repairs"
+      },
+      "media_spokesperson": {
+        "total": 1738,
+        "hold_percent": 14.73,
+        "top_action": "press_conference"
+      }
+    }
+  }
+}

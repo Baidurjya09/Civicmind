@@ -1,18 +1,39 @@
-# CivicMind - Multi-Agent RL Governance System
+# 🏛️ CivicMind - Multi-Agent Governance System
 
-**Meta × Hugging Face OpenEnv Hackathon 2025**
+**OpenEnv India Hackathon 2026**
 
-A reinforcement learning system where 6 AI agents learn optimal civic governance policies through Q-learning. The system is designed with modular RL agents, reproducible evaluation, and minimal architecture to ensure clarity and interpretability.
-
-## Key Results
-
-- **+20.4%** reward improvement (trained vs untrained policy)
-- **+104%** trust improvement
-- **131** discrete states learned through exploration
-- **5/5** anti-reward-hacking tests passing
-- **Reproducible** in 30 seconds
+A multi-agent reinforcement learning environment where 6 AI agents govern a city through crises using LLM-based decision making.
 
 ---
+
+## 🚀 Quick Links
+
+- **[🎮 Live Demo on HuggingFace Space](https://huggingface.co/spaces/baidujyabastavhazarika/civicmind)**
+- **[📓 Training Notebook (Colab)](https://colab.research.google.com/github/baidujyabastavhazarika/civicmind/blob/main/CivicMind_Training.ipynb)**
+- **[📝 Blog Post](https://huggingface.co/spaces/baidujyabastavhazarika/civicmind/blob/main/BLOG_POST_FINAL.md)**
+
+---
+
+## 📊 Training Results
+
+![Loss Curve](train_result_elite/plots/loss_curve.png)
+![Training Summary](train_result_elite/plots/training_summary.png)
+![Agent Diversity](train_result_elite/plots/agent_diversity_comparison.png)
+
+### Key Metrics
+| Metric | Value |
+|--------|-------|
+| SFT Initial Loss | 2.62 |
+| SFT Final Loss | 0.10 |
+| Loss Reduction | 96.2% |
+| Agent Diversity | 87.4% active governance |
+| Q-Learning Improvement | +18.4% reward |
+| Training Time | ~37 minutes |
+| Model | Qwen2.5-0.5B + LoRA |
+| Trainable Params | 0.44% |
+
+---
+
 
 ## 🚀 Quick Start (Local)
 

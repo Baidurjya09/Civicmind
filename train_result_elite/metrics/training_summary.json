@@ -1,0 +1,27 @@
+{
+  "training_time_seconds": 2336.800252199173,
+  "training_time_minutes": 38.946670869986214,
+  "initial_loss": 2.6187944412231445,
+  "final_loss": 0.10065294504165649,
+  "min_loss": 0.09794347286224366,
+  "max_loss": 2.6187944412231445,
+  "loss_reduction_percent": 96.15651601144206,
+  "total_steps": 782,
+  "epochs": 3,
+  "batch_size": 4,
+  "learning_rate_initial": 0.0002,
+  "learning_rate_final": 3.227045923814842e-11,
+  "trainable_params": 2162688,
+  "all_params": 496195456,
+  "trainable_percent": 0.43585405183557346,
+  "data_quality": "elite",
+  "features": [
+    "multiple_valid_answers",
+    "randomized_reasoning",
+    "distraction_factors",
+    "rejection_reasoning",
+    "trade_off_language",
+    "confidence_levels",
+    "impact_ranges"
+  ]
+}

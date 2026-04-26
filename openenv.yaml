@@ -1,0 +1,261 @@
+name: civicmind
+version: 1.0.0
+description: Multi-agent reinforcement learning environment for civic governance with emergent rebel mechanics and auto-escalating crises
+
+environment:
+  entry_point: environment.civic_env:CivicMindEnv
+  framework: gymnasium
+  
+agents:
+  - id: mayor
+    description: Chief executive with budget allocation and emergency powers
+    role: Executive leadership and crisis management
+    
+  - id: health_minister
+    description: Public health management and disease response
+    role: Healthcare policy and pandemic response
+    
+  - id: finance_officer
+    description: Economic policy and fiscal management
+    role: Budget management and economic stimulus
+    
+  - id: police_chief
+    description: Security and community relations
+    role: Crime prevention and civil order
+    
+  - id: infrastructure_head
+    description: Infrastructure maintenance and emergency repairs
+    role: City infrastructure and utilities management
+    
+  - id: media_spokesperson
+    description: Public communication and trust building
+    role: Information dissemination and public relations
+
+observation_space:
+  type: dict
+  description: Partial observability - each agent sees role-specific information
+  common_observations:
+    week: [0, 52]
+    trust_score: [0.0, 1.0]
+    survival_rate: [0.0, 1.0]
+    gdp_index: [0.0, 2.0]
+    budget_remaining: [0, 10000000]
+    rebel_active: boolean
+    active_crises: list
+  
+  agent_specific:
+    mayor:
+      - policy_effectiveness
+      - corruption
+      - civil_unrest
+    health_minister:
+      - disease_prevalence
+      - hospital_capacity
+    finance_officer:
+      - unemployment
+      - inflation
+    police_chief:
+      - crime_index
+    infrastructure_head:
+      - power_grid_health
+    media_spokesperson:
+      - misinformation_level
+      - citizen_petitions
+
+action_space:
+  type: dict
+  description: Each agent has role-specific actions
+  agents:
+    mayor:
+      actions:
+        - hold
+        - emergency_budget_release
+        - invest_in_welfare
+        - reduce_tax
+    health_minister:
+      actions:
+        - hold
+        - mass_vaccination
+        - increase_hospital_staff
+    finance_officer:
+      actions:
+        - hold
+        - issue_bonds
+        - stimulus_package
+    police_chief:
+      actions:
+        - hold
+        - community_policing
+    infrastructure_head:
+      actions:
+        - hold
+        - emergency_repairs
+    media_spokesperson:
+      actions:
+        - hold
+        - press_conference
+        - social_media_campaign
+
+themes:
+  multi_agent:
+    description: 6 government agents + oversight + emergent rebel agent
+    agents: 8
+    coordination: Required for optimal performance
+    
+  long_horizon:
+    description: 52-week episodes with compound effects
+    max_steps: 52
+    temporal_dependencies: High
+    
+  professional_tasks:
+    description: Real-world tool calls via API endpoints
+    tools: 8 FastAPI endpoints
+    partial_observability: true
+    
+  personal_tasks:
+    description: Citizen petitions with schema drift
+    schema_versions: 5
+    drift_mechanism: Progressive format changes
+    
+  self_improvement:
+    description: Auto-escalating difficulty based on performance
+    difficulty_levels: 10
+    adaptation: Dynamic crisis intensity
+    
+  wild_card:
+    description: Emergent rebel agent spawns on governance failure
+    trigger: trust < 30% for 2+ weeks
+    mechanics: Grows stronger if ignored, defeated by restoring trust
+
+reward:
+  type: composite
+  range: [0.0, 1.0]
+  components:
+    survival: 0.40
+    trust: 0.30
+    economy: 0.20
+    security: 0.10
+  penalties:
+    rebel_active: -0.20
+    active_crises: -0.05 per crisis
+
+configuration:
+  max_weeks:
+    default: 52
+    range: [10, 104]
+    description: Episode length in weeks
+    
+  difficulty:
+    default: 3
+    range: [1, 10]
+    description: Crisis intensity and frequency
+    
+  num_citizens:
+    default: 10000
+    range: [1000, 100000]
+    description: City population size
+    
+  enable_rebel:
+    default: true
+    description: Enable emergent rebel agent mechanic
+    
+  enable_schema_drift:
+    default: true
+    description: Enable citizen petition schema evolution
+
+metadata:
+  author: CivicMind Team
+  hackathon: Meta × Hugging Face OpenEnv 2025
+  license: MIT
+  tags:
+    - multi-agent
+    - governance
+    - long-horizon
+    - emergent-behavior
+    - crisis-management
+  
+  bonus_prizes:
+    - Fleet AI (multi-agent)
+    - Halluminate (multi-agent)
+    - Scale AI (professional tasks + long-horizon)
+    - Patronus AI (schema drift)
+    - Snorkel AI (self-improvement)
+    - Mercor (long-horizon)
+
+training:
+  algorithms:
+    - Q-Learning (tabular)
+    - Supervised Fine-Tuning (LLM)
+    - GRPO (RL-based LLM)
+  
+  results:
+    q_learning:
+      improvement: +18.4% reward
+      trust_improvement: +107%
+      training_time: 3 seconds
+    
+    llm_sft:
+      loss_reduction: 97.92%
+      training_time: 55 minutes
+      model: Qwen2.5-0.5B-Instruct + LoRA
+
+installation:
+  dependencies:
+    - python >= 3.10
+    - gymnasium
+    - numpy
+    - torch
+    - transformers
+    - peft
+  
+  commands:
+    - pip install -r requirements.txt
+    - python evaluate.py --mode compare
+
+usage:
+  basic: |
+    from environment.civic_env import CivicMindEnv, CivicMindConfig
+    
+    config = CivicMindConfig(max_weeks=52, difficulty=3)
+    env = CivicMindEnv(config)
+    
+    obs = env.reset()
+    done = False
+    
+    while not done:
+        actions = {agent_id: policy(obs[agent_id]) for agent_id in env.AGENT_IDS}
+        obs, reward, done, info = env.step(actions)
+  
+  training: |
+    # Q-Learning
+    python train_aggressive.py
+    
+    # LLM Training
+    python training/train_llm_sft.py --epochs 3
+    
+    # GRPO Training
+    python training/train_grpo.py --epochs 2
+
+evaluation:
+  metrics:
+    - reward_improvement
+    - trust_score
+    - survival_rate
+    - gdp_index
+    - crisis_response_time
+  
+  baselines:
+    - random_policy
+    - heuristic_policy
+    - trained_policy
+  
+  reproducibility:
+    seed: 42
+    deterministic: true
+    runtime: 30 seconds
+
+links:
+  repository: https://github.com/YOUR_USERNAME/civicmind
+  documentation: README.md
+  blog_post: BLOG_POST.md
+  demo: demo/ultimate_demo.py
