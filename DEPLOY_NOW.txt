@@ -1,0 +1,89 @@
+🚨 DEPLOY HUGGINGFACE SPACE - DO THIS NOW! 🚨
+==============================================
+
+⏰ TIME: Before 4:50 PM IST
+📧 EMAIL: baidujyabastavhazarika@gmail.com
+
+==============================================
+STEP 1: CREATE SPACE (2 min)
+==============================================
+
+1. Open: https://huggingface.co/new-space
+
+2. Fill in:
+   Owner: Baidurjya09
+   Space name: civicmind
+   License: MIT
+   SDK: Docker ⚠️ IMPORTANT!
+   Hardware: CPU basic (free)
+
+3. Click "Create Space"
+
+==============================================
+STEP 2: UPLOAD FILES (5 min)
+==============================================
+
+Click "Files" tab → "Add file" → "Upload files"
+
+Upload these files ONE BY ONE:
+✅ app.py
+✅ requirements_hf.txt
+✅ openenv.yaml
+✅ setup.py
+✅ BLOG_POST_FINAL.md
+✅ README.md
+
+⚠️ RENAME BEFORE UPLOAD:
+- Dockerfile.space → Dockerfile
+
+Upload these FOLDERS (click "Upload folder"):
+✅ environment/
+✅ agents/
+✅ rewards/
+✅ core/
+✅ apis/
+
+==============================================
+STEP 3: WAIT FOR BUILD (5-10 min)
+==============================================
+
+- Space will build automatically
+- Check "Logs" tab for progress
+- Wait for "Running" status
+
+==============================================
+STEP 4: TEST IN INCOGNITO (1 min)
+==============================================
+
+Open in incognito browser:
+https://huggingface.co/spaces/Baidurjya09/civicmind
+
+✅ Does it load?
+✅ Does the demo work?
+
+==============================================
+STEP 5: SUBMIT FORM (2 min)
+==============================================
+
+Form URL: [Check your email]
+
+Fill in EXACTLY:
+
+Email: baidujyabastavhazarika@gmail.com
+
+HuggingFace Space URL:
+https://huggingface.co/spaces/Baidurjya09/civicmind
+
+Training Notebook URL:
+https://colab.research.google.com/github/Baidurjya09/Civicmind/blob/main/CivicMind_Training.ipynb
+
+Select: ● Blog Post
+
+Blog Post URL:
+https://huggingface.co/spaces/Baidurjya09/civicmind/blob/main/BLOG_POST_FINAL.md
+
+==============================================
+
+🚀 START NOW! TIME IS RUNNING OUT! 🚀
+
+==============================================
